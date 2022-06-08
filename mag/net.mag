@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654630632
+use opamp_wrapper  opamp_wrapper_0
+timestamp 1654625306
+transform 1 0 23919 0 1 779
+box -2280 -1640 26995 13665
+use pix5  pix5_0
+timestamp 1654627359
+transform 1 0 3000 0 1 13600
+box -3000 -13600 15740 5750
+<< end >>

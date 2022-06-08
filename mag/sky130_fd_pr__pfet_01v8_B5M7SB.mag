@@ -1,0 +1,82 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1608331766
+<< error_p >>
+rect -29 -101 29 -95
+rect -29 -135 -17 -101
+rect -29 -141 29 -135
+<< nwell >>
+rect -211 -274 211 274
+<< pmos >>
+rect -15 -54 15 126
+<< pdiff >>
+rect -73 114 -15 126
+rect -73 -42 -61 114
+rect -27 -42 -15 114
+rect -73 -54 -15 -42
+rect 15 114 73 126
+rect 15 -42 27 114
+rect 61 -42 73 114
+rect 15 -54 73 -42
+<< pdiffc >>
+rect -61 -42 -27 114
+rect 27 -42 61 114
+<< nsubdiff >>
+rect -175 204 -79 238
+rect 79 204 175 238
+rect -175 141 -141 204
+rect 141 141 175 204
+rect -175 -204 -141 -141
+rect 141 -204 175 -141
+rect -175 -238 175 -204
+<< nsubdiffcont >>
+rect -79 204 79 238
+rect -175 -141 -141 141
+rect 141 -141 175 141
+<< poly >>
+rect -15 126 15 152
+rect -15 -85 15 -54
+rect -33 -101 33 -85
+rect -33 -135 -17 -101
+rect 17 -135 33 -101
+rect -33 -151 33 -135
+<< polycont >>
+rect -17 -135 17 -101
+<< locali >>
+rect -175 204 -79 238
+rect 79 204 175 238
+rect -175 141 -141 204
+rect 141 141 175 204
+rect -61 114 -27 130
+rect -61 -58 -27 -42
+rect 27 114 61 130
+rect 27 -58 61 -42
+rect -33 -135 -17 -101
+rect 17 -135 33 -101
+rect -175 -204 -141 -141
+rect 141 -204 175 -141
+rect -175 -238 175 -204
+<< viali >>
+rect -61 -42 -27 114
+rect 27 -42 61 114
+rect -17 -135 17 -101
+<< metal1 >>
+rect -67 114 -21 126
+rect -67 -42 -61 114
+rect -27 -42 -21 114
+rect -67 -54 -21 -42
+rect 21 114 67 126
+rect 21 -42 27 114
+rect 61 -42 67 114
+rect 21 -54 67 -42
+rect -29 -101 29 -95
+rect -29 -135 -17 -101
+rect 17 -135 29 -101
+rect -29 -141 29 -135
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string FIXED_BBOX -158 -221 158 221
+string parameters w 0.9 l 0.15 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 0 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viagl 0 viagr 0 viagt 0 viagb 0 viagate 100 viadrn 100 viasrc 100
+string library sky130
+<< end >>

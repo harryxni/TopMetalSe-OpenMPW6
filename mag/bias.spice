@@ -1,0 +1,10 @@
+* SPICE3 file created from bias.ext - technology: sky130A
+
+.subckt bias SF_IB NB1 NB2 OUT_IB AMP_IB VDD GND
+X0 NB1 NB1 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=1.11e+13p ps=4e+07u w=1e+06u l=1.2e+06u
+X1 NB2 NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1.2e+06u
+X2 AMP_IB AMP_IB GND GND sky130_fd_pr__nfet_01v8_lvt ad=5.6e+12p pd=1.74e+07u as=0p ps=0u w=8e+06u l=2e+06u
+X3 OUT_IB OUT_IB GND GND sky130_fd_pr__nfet_01v8_lvt ad=5.6e+12p pd=1.74e+07u as=0p ps=0u w=8e+06u l=2e+06u
+X4 SF_IB SF_IB VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=5.5e+11p pd=3.1e+06u as=4.5e+11p ps=2.9e+06u w=1e+06u l=1e+06u
+.ends
+

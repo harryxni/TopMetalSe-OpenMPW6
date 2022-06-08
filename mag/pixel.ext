@@ -1,0 +1,167 @@
+timestamp 1654643737
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "gring" 2 6700 -1680 6700 -1680 m5
+port "NB1" 11 6770 -2510 6770 -2510 m3
+port "PIX_OUT" 16 6510 -2850 6510 -2850 m4
+port "ROW_SEL" 10 6780 -1180 6780 -1180 m3
+port "NB2" 13 4860 280 4860 280 m2
+port "VREF" 9 3870 290 3870 290 m2
+port "VBIAS" 12 4330 290 4330 290 m2
+port "AMP_IN" 14 5690 -1950 5690 -1950 m5
+port "CSA_VREF" 17 3800 -200 3800 -200 m3
+port "test_net" 5 6340 -500 6340 -500 li
+port "SF_IB" 15 6790 100 6790 100 m3
+port "net2" 6 4930 -460 4930 -460 li
+port "net1" 1 4460 -310 4460 -310 li
+port "test" 3 3990 -50 3990 -50 li
+port "VDD" 7 3830 240 3830 240 m1
+port "GND" 8 3910 -2620 3910 -2620 m1
+port "shield" 4 5570 -2360 5570 -2360 m4
+node "b_4480_n2020#" 0 0 4480 -2020 glass 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "gring" 1 3042.97 6700 -1680 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3840000 24000 0 0
+node "NB1" 530 3564.24 6770 -2510 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77200 1960 0 0 11000 460 12000 520 13600 500 211600 6180 0 0 0 0 0 0
+node "PIX_OUT" 713 2152.37 6510 -2850 m4 0 0 0 0 0 0 0 0 32000 960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159300 2680 25500 640 28900 680 32300 720 501400 6980 0 0 0 0
+node "ROW_SEL" 225 3147.15 6780 -1180 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99100 1520 0 0 10500 520 14000 540 16800 620 212200 6180 0 0 0 0 0 0
+node "NB2" 130 1320.74 4860 280 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79700 1200 0 0 29200 740 19600 560 240000 6160 0 0 0 0 0 0 0 0
+node "a_4050_n2590#" 3109 383.887 4050 -2590 ndif 0 0 0 0 0 0 0 0 128800 3580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104900 3680 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5750_n920#" 1388 31.46 5750 -920 ndif 0 0 0 0 0 0 0 0 35900 1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VREF" 2587 1234.85 3870 290 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54900 3480 0 0 13500 480 13500 480 210000 6140 0 0 0 0 0 0 0 0
+node "a_4120_n750#" 4074 0 4120 -750 ndif 0 0 0 0 0 0 0 0 86100 3520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3860_n750#" 4074 0 3860 -750 ndif 0 0 0 0 0 0 0 0 86100 3520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBIAS" 241 1158.86 4330 290 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 90200 1500 0 0 12500 540 19800 740 212100 6200 0 0 0 0 0 0 0 0
+node "AMP_IN" 3258 6600.73 5690 -1950 m5 0 0 0 0 0 0 0 0 0 0 11760 448 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65400 3900 0 0 82760 2588 90600 2000 151100 2220 246800 2840 456900 3760 4161600 8160 0 0
+node "CSA_VREF" 648 153.725 3800 -200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 241500 3744 0 0 14900 600 9000 380 25200 860 227200 6620 0 0 0 0 0 0
+node "test_net" 1224 451.001 6340 -500 li 0 0 0 0 0 0 0 0 0 0 20000 600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13800 820 0 0 63000 2760 0 0 0 0 0 0 0 0 0 0 0 0
+node "SF_IB" 192 -2043.92 6790 100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60800 1140 0 0 9000 460 9100 400 18000 720 211600 6180 0 0 0 0 0 0
+node "net2" 1270 1526.76 4930 -460 li 0 0 0 0 0 0 0 0 20000 600 10920 428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60800 1140 0 0 132400 5120 17900 760 16000 560 233000 2320 0 0 0 0 0 0
+node "net1" 1869 607.902 4460 -310 li 0 0 0 0 0 0 0 0 14000 540 14000 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66000 1060 0 0 139300 6440 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5460_10#" 563 0 5460 10 pdif 0 0 0 0 0 0 0 0 0 0 14000 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4350_10#" 1193 68.62 4350 10 pdif 0 0 0 0 0 0 0 0 0 0 14000 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 223800 3340 0 0 20300 1020 0 0 0 0 0 0 0 0 0 0 0 0
+node "test" 2538 396.025 3990 -50 li 0 0 0 0 0 0 0 0 14000 540 14000 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 273500 5740 0 0 49500 2220 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 12027 6555.1 3830 240 m1 0 0 0 0 2040000 7360 0 0 46000 1660 42000 1620 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103900 3360 552900 8880 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 3910 -2620 m1 1183952 10064 0 0 0 0 0 0 36800 1220 33200 1180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140000 3820 835200 13800 31200 940 36000 840 1315000 7180 0 0 0 0
+equiv "GND" "shield"
+cap "VREF" "VDD" 433.795
+cap "VBIAS" "net1" 403.724
+cap "test_net" "CSA_VREF" 192.325
+cap "VREF" "AMP_IN" 35.1076
+cap "SF_IB" "VREF" 90.335
+cap "VBIAS" "a_4120_n750#" 13.895
+cap "CSA_VREF" "PIX_OUT" 472.155
+cap "CSA_VREF" "NB2" 98.84
+cap "NB1" "gring" 1398.87
+cap "gring" "test" 317.037
+cap "ROW_SEL" "gring" 158.2
+cap "a_4350_10#" "gring" 216.65
+cap "AMP_IN" "a_4050_n2590#" 24.5141
+cap "test_net" "ROW_SEL" 8.63158
+cap "net2" "VDD" 1038.85
+cap "net2" "AMP_IN" 1910.05
+cap "PIX_OUT" "NB1" 136.25
+cap "net2" "SF_IB" 200.597
+cap "NB1" "NB2" 169.673
+cap "PIX_OUT" "ROW_SEL" 430.905
+cap "CSA_VREF" "net1" 562.834
+cap "NB2" "test" 27.12
+cap "NB2" "ROW_SEL" 156.24
+cap "a_4350_10#" "NB2" 79.14
+cap "VREF" "gring" 609.8
+cap "AMP_IN" "VDD" 1184.84
+cap "SF_IB" "VDD" 3552.08
+cap "SF_IB" "AMP_IN" 27.5
+cap "VBIAS" "CSA_VREF" 90.335
+cap "a_3860_n750#" "gring" 13.965
+cap "net1" "test" 203.455
+cap "a_4350_10#" "net1" 99.419
+cap "a_4120_n750#" "ROW_SEL" 21.55
+cap "a_4050_n2590#" "gring" 32.35
+cap "a_5460_10#" "VDD" 18.445
+cap "net2" "gring" 47.8
+cap "VBIAS" "NB1" 211.535
+cap "a_5460_10#" "SF_IB" 30.17
+cap "VBIAS" "test" 98.2433
+cap "VBIAS" "ROW_SEL" 90.335
+cap "a_4350_10#" "VBIAS" 138.366
+cap "net2" "test_net" 186.705
+cap "gring" "VDD" 1804.22
+cap "AMP_IN" "gring" 3307.09
+cap "net2" "NB2" 454.03
+cap "SF_IB" "gring" 317.417
+cap "test_net" "VDD" 427.878
+cap "test_net" "AMP_IN" 599.553
+cap "test_net" "SF_IB" 95.4373
+cap "PIX_OUT" "VDD" 352.137
+cap "VBIAS" "VREF" 478.266
+cap "NB2" "VDD" 577.788
+cap "AMP_IN" "PIX_OUT" 368.479
+cap "CSA_VREF" "test" 349.881
+cap "AMP_IN" "NB2" 576.177
+cap "a_4350_10#" "CSA_VREF" 55.9204
+cap "SF_IB" "PIX_OUT" 240.15
+cap "SF_IB" "NB2" 98.84
+cap "a_5460_10#" "gring" 13.65
+cap "net2" "net1" 351.955
+cap "net1" "VDD" 1587.87
+cap "AMP_IN" "net1" 544.445
+cap "a_4350_10#" "test" 417.972
+cap "SF_IB" "net1" 60.1
+cap "a_4120_n750#" "AMP_IN" 13.86
+cap "VREF" "CSA_VREF" 90.335
+cap "test_net" "gring" 36.6
+cap "net2" "a_5750_n920#" 27.31
+cap "PIX_OUT" "gring" 588.5
+cap "VBIAS" "VDD" 439.077
+cap "NB2" "gring" 107.84
+cap "VBIAS" "AMP_IN" 674.375
+cap "SF_IB" "VBIAS" 90.335
+cap "VREF" "NB1" 90.335
+cap "test_net" "PIX_OUT" 43.1518
+cap "AMP_IN" "a_5750_n920#" 41.28
+cap "VREF" "test" 188.612
+cap "VREF" "ROW_SEL" 116.465
+cap "net2" "CSA_VREF" 526.253
+cap "net1" "gring" 29.05
+cap "a_3860_n750#" "ROW_SEL" 21.55
+cap "CSA_VREF" "VDD" 2547.74
+cap "NB1" "a_4050_n2590#" 69.125
+cap "CSA_VREF" "AMP_IN" 1662.82
+cap "test_net" "net1" 35.5833
+cap "a_4050_n2590#" "ROW_SEL" 74.125
+cap "SF_IB" "CSA_VREF" 962.148
+cap "net2" "ROW_SEL" 93.4839
+cap "VBIAS" "gring" 141.04
+cap "net1" "NB2" 109.44
+cap "test" "VDD" 2251.14
+cap "a_3860_n750#" "VREF" 15.3825
+cap "a_4350_10#" "VDD" 1545.51
+cap "AMP_IN" "NB1" 157.197
+cap "AMP_IN" "test" 75.9
+cap "AMP_IN" "ROW_SEL" 805.739
+cap "SF_IB" "test" 757.4
+cap "a_4350_10#" "SF_IB" 754.38
+cap "VREF" "a_4050_n2590#" 41.25
+cap "CSA_VREF" "gring" 217.7
+device csubckt sky130_fd_pr__cap_mim_m3_1 5340 -810 5341 -809 w=400 l=400 "None" "AMP_IN" 736 0 "net2" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4120 -2590 4121 -2589 l=200 w=240 "GND" "NB1" 400 0 "a_4050_n2590#" 240 0 "GND" 240 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5750 -1120 5751 -1119 l=200 w=400 "GND" "ROW_SEL" 400 0 "PIX_OUT" 400 0 "a_5750_n920#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4600 -1040 4601 -1039 l=230 w=200 "GND" "NB2" 460 0 "GND" 200 0 "net2" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4130 -2220 4131 -2219 l=30 w=1400 "GND" "AMP_IN" 60 0 "a_4050_n2590#" 1400 0 "a_4120_n750#" 1400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4020 -2220 4021 -2219 l=30 w=1400 "GND" "VREF" 60 0 "a_3860_n750#" 1400 0 "a_4050_n2590#" 1400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 5750 -730 5751 -729 l=30 w=200 "GND" "test_net" 60 0 "a_5750_n920#" 200 0 "VDD" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4600 -710 4601 -709 l=200 w=200 "GND" "net1" 400 0 "net2" 200 0 "VDD" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 4120 -680 4121 -679 l=160 w=200 "GND" "VBIAS" 320 0 "a_4120_n750#" 200 0 "net1" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3860 -680 3861 -679 l=160 w=200 "GND" "VBIAS" 320 0 "a_3860_n750#" 200 0 "test" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 5020 -320 5021 -319 l=1600 w=84 "VDD" "CSA_VREF" 3200 0 "net2" 84 0 "AMP_IN" 84 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 6430 -20 6431 -19 l=200 w=200 "VDD" "SF_IB" 400 0 "test_net" 200 0 "VDD" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 6130 -20 6131 -19 l=200 w=200 "VDD" "net2" 400 0 "GND" 200 0 "test_net" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 5530 10 5531 11 l=400 w=200 "VDD" "test" 800 0 "a_5460_10#" 200 0 "net1" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 5060 10 5061 11 l=400 w=200 "VDD" "a_4350_10#" 800 0 "VDD" 200 0 "a_5460_10#" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 4420 10 4421 11 l=400 w=200 "VDD" "a_4350_10#" 800 0 "a_4350_10#" 200 0 "VDD" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 3950 10 3951 11 l=400 w=200 "VDD" "test" 800 0 "test" 200 0 "a_4350_10#" 200 0

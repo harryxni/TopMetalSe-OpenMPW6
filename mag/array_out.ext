@@ -1,0 +1,227 @@
+timestamp 1654624406
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use bias bias_0 1 0 198620 0 1 681970
+use pixel_array pixel_array_0 1 0 199180 0 1 673870
+use opamp_diego opamp_diego_0 1 0 210841 0 1 676678
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "COL_SEL2" 11 205530 655080 205530 655080 m4
+port "COL_SEL1" 12 202530 654980 202530 654980 m4
+port "COL_SEL0" 13 199500 654880 199500 654880 m4
+port "ROW_SEL2" 8 187040 669390 187040 669390 m3
+port "SF_IB" 6 198220 676640 198220 676640 m3
+port "AMP_IB" 4 204820 699110 204820 699110 m3
+port "OUT_IB" 3 202930 699380 202930 699380 m3
+port "AOUT" 5 255740 673820 255740 673820 m4
+port "AOUT" 5 239080 677340 239080 677340 m4
+port "CSA_VREF" 14 198420 654460 198420 654460 m4
+port "VREF" 15 187400 677730 187400 677730 m4
+port "NB2" 7 200250 678210 200250 678210 m2
+port "NB1" 10 198400 674090 198400 674090 m3
+port "SF_IB" 6 187260 680880 187260 680880 m3
+port "ROW_SEL1" 16 187290 672420 187290 672420 m3
+port "GND" 1 208860 673370 208860 673370 m2
+port "ROW_SEL0" 17 187300 675410 187300 675410 m3
+port "VBIAS" 9 187050 677950 187050 677950 m4
+port "VBIAS" 9 199720 678180 199720 678180 m2
+port "NB2" 7 201570 699900 201570 699900 m3
+port "NB1" 10 201070 699840 201070 699840 m3
+port "VDD" 2 213860 679590 214570 683520 m1
+port "VDD" 2 192830 685030 192830 685030 m1
+port "VDD" 2 197780 676780 197780 676780 m1
+port "OUT_IB" 3 208560 665370 208560 665370 p
+port "AMP_IB" 4 208940 678020 208940 678020 p
+port "GND" 1 215500 657320 215500 657320 m1
+port "GND" 1 236140 664040 237090 667020 m1
+node "COL_SEL2" 3 4598.5 205530 655080 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2956800 27320 0 0 0 0
+node "COL_SEL1" 3 4619.2 202530 654980 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2967800 27420 0 0 0 0
+node "COL_SEL0" 3 4979.38 199500 654880 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2943600 27200 0 0 0 0
+node "ROW_SEL2" 7 5039.75 187040 669390 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1137150 25450 0 0 0 0 0 0
+node "SF_IB" 8 5561.09 198220 676640 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1287738 29804 0 0 0 0 0 0
+node "AMP_IB" 1 18400.3 204820 699110 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30512000 41340 0 0 0 0 0 0
+node "OUT_IB" 1 18400 202930 699380 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30510900 41340 0 0 0 0 0 0
+node "AOUT" 0 54246.5 239080 677340 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6723750 11510 2673200 6540 131376853 127724 0 0 0 0
+node "CSA_VREF" 16 9827.93 198420 654460 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 298400 6200 210900 5360 2226900 44940 0 0 0 0
+node "VREF" 12 7179.28 187400 677730 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79850 2610 542475 12850 1214000 24480 0 0 0 0
+node "m2_203660_679855#" 1 208.67 203660 679855 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65450 1410 0 0 0 0 0 0 0 0
+node "NB2" 17 4621.27 200250 678210 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 916075 22640 0 0 0 0 0 0 0 0
+node "NB1" 19 7453.85 198400 674090 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1887000 32640 159300 4080 0 0 0 0 0 0
+node "SF_IB" 7 5150.3 187260 680880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31500 880 1102950 24690 0 0 0 0 0 0
+node "ROW_SEL1" 10 5399.53 187290 672420 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 170100 3960 85500 2260 994250 22610 0 0 0 0 0 0
+node "GND" 5 7662.3 208860 673370 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2753000 16940 2468000 13140 308100 2360 1068210 6258 0 0 0 0
+node "ROW_SEL0" 11 6007.24 187300 675410 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222300 5120 106200 2720 986850 22290 0 0 0 0 0 0
+node "VBIAS" 22 8891.57 199720 678180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 571425 13530 221200 6300 67500 1680 1176750 26330 0 0 0 0
+node "m1_205720_680360#" 0 79 205720 680360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 0 0 0 0 0 0 0 0 0 0
+node "NB2" 5 9323 201570 699900 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 84000 1240 3917000 39580 0 0 0 0 0 0
+node "NB1" 5 9588.9 201070 699840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37800 780 76000 1160 4036000 40760 0 0 0 0 0 0
+node "VDD" 0 333108 197780 676780 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 356233955 406280 0 0 0 0 0 0 0 0 0 0
+node "OUT_IB" 333 12558.9 208560 665370 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 711600 4600 0 0 100800 1720 3633700 45620 0 0 0 0 0 0 0 0 0 0
+node "a_208580_665590#" 532 17997 208580 665590 ndif 0 0 0 0 0 0 0 0 640000 4000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 640000 4000 640000 4000 20789465 43890 0 0 0 0 0 0 0 0
+node "AMP_IB" 353 4491.99 208940 678020 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 729000 4760 0 0 142500 2200 125400 1700 695950 11470 0 0 0 0 0 0 0 0
+node "a_208960_678250#" 711 5998.14 208960 678250 ndif 0 0 0 0 0 0 0 0 480000 3800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 464000 3780 736000 4120 1515400 12780 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 236140 664040 m1 4120088 11596 0 0 0 0 0 0 704000 7280 720000 7300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1328000 8060 406279600 418680 13422450 60930 25728780 61854 4010410 17178 0 0 0 0
+cap "SF_IB" "ROW_SEL0" 79.4925
+cap "VDD" "NB1" 698.08
+cap "AMP_IB" "OUT_IB" 76.1538
+cap "COL_SEL2" "VDD" 1116.57
+cap "AMP_IB" "m1_205720_680360#" 98.25
+cap "AMP_IB" "VDD" 4332
+cap "OUT_IB" "GND" 191
+cap "VREF" "NB2" 198.385
+cap "GND" "a_208580_665590#" 1566.01
+cap "VDD" "ROW_SEL1" 1281.8
+cap "CSA_VREF" "ROW_SEL2" 125.8
+cap "NB1" "NB2" 4069.47
+cap "a_208960_678250#" "AOUT" 588.1
+cap "ROW_SEL1" "NB1" 174.535
+cap "CSA_VREF" "VDD" 1394.87
+cap "VREF" "VBIAS" 7538.56
+cap "VBIAS" "SF_IB" 116.014
+cap "VREF" "VDD" 951
+cap "SF_IB" "VDD" 1281.8
+cap "COL_SEL0" "VDD" 1116.57
+cap "CSA_VREF" "NB1" 2236.91
+cap "SF_IB" "VDD" 1270.46
+cap "VDD" "AOUT" 4894.03
+cap "NB1" "VDD" 1504
+cap "COL_SEL1" "VDD" 1116.57
+cap "NB2" "OUT_IB" 7508.81
+cap "VREF" "NB1" 83.2
+cap "VDD" "ROW_SEL0" 1281.8
+cap "SF_IB" "NB1" 728.99
+cap "CSA_VREF" "ROW_SEL1" 115.227
+cap "COL_SEL2" "a_208580_665590#" 607
+cap "VBIAS" "NB2" 236.482
+cap "OUT_IB" "m2_203660_679855#" 224.217
+cap "ROW_SEL0" "NB1" 171.388
+cap "VDD" "OUT_IB" 4332
+cap "SF_IB" "ROW_SEL1" 94.1437
+cap "NB2" "VDD" 1504
+cap "CSA_VREF" "SF_IB" 937.174
+cap "ROW_SEL2" "VDD" 1281.8
+cap "OUT_IB" "m1_205720_680360#" 10.2857
+cap "VBIAS" "VDD" 941.9
+cap "VREF" "SF_IB" 122.12
+cap "CSA_VREF" "ROW_SEL0" 202.736
+cap "OUT_IB" "a_208580_665590#" 1894.88
+cap "ROW_SEL2" "NB1" 146.82
+cap "VBIAS" "NB1" 80.4
+cap "COL_SEL1" "a_208580_665590#" 607
+device msubckt sky130_fd_pr__nfet_01v8_lvt 208580 665190 208581 665191 l=400 w=1600 "GND" "OUT_IB" 800 0 "GND" 1600 0 "a_208580_665590#" 1600 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 208960 677850 208961 677851 l=400 w=1600 "GND" "AMP_IB" 800 0 "GND" 1600 0 "a_208960_678250#" 1600 0
+cap "pixel_array_0/COL_SEL1" "pixel_array_0/a_540_n6880#" -120.6
+cap "pixel_array_0/a_540_n6880#" "pixel_array_0/COL_SEL2" -120.6
+cap "GND" "pixel_array_0/a_540_n6880#" -51.01
+cap "pixel_array_0/NB1" "pixel_array_0/pixel_6/gring" -108.25
+cap "pixel_array_0/pixel_6/gring" "pixel_array_0/NB1" 48.04
+cap "GND" "pixel_array_0/pixel_8/gring" 11.46
+cap "pixel_array_0/pixel_8/NB1" "GND" 5.5
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/pixel_6/gring" -108.25
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/SF_IB" -14.9625
+cap "pixel_array_0/pixel_6/VDD" "pixel_array_0/CSA_VREF" -37.925
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/pixel_6/gring" -8.1
+cap "pixel_array_0/pixel_6/gring" "pixel_array_0/NB1" -108.25
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_6/VDD" -30.75
+cap "pixel_array_0/SF_IB" "pixel_array_0/NB1" -18.7031
+cap "pixel_array_0/VDD" "pixel_array_0/NB1" -2.84217e-14
+cap "pixel_array_0/SF_IB" "pixel_array_0/CSA_VREF" -14.9625
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_6/gring" 8.335
+cap "pixel_array_0/VDD" "pixel_array_0/SF_IB" 111.15
+cap "pixel_array_0/pixel_6/gring" "pixel_array_0/NB1" -8.1
+cap "pixel_array_0/SF_IB" "pixel_array_0/pixel_6/VDD" -0.03
+cap "pixel_array_0/SF_IB" "pixel_array_0/VDD" -264.207
+cap "pixel_array_0/pixel_6/gring" "pixel_array_0/VDD" -55.665
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_6/VDD" 4.165
+cap "pixel_array_0/pixel_5/gring" "GND" 11.46
+cap "pixel_array_0/pixel_5/NB1" "GND" 5.5
+cap "pixel_array_0/ROW_SEL1" "pixel_array_0/pixel_3/gring" -55.6
+cap "pixel_array_0/ROW_SEL1" "pixel_array_0/pixel_3/VREF" 10.2273
+cap "pixel_array_0/pixel_3/gring" "pixel_array_0/ROW_SEL1" -8.1
+cap "pixel_array_0/pixel_3/VREF" "pixel_array_0/ROW_SEL1" 10.2273
+cap "NB1" "pixel_array_0/CSA_VREF" -5.68434e-14
+cap "pixel_array_0/pixel_3/VDD" "pixel_array_0/VDD" -42.025
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_3/gring" 2.885
+cap "pixel_array_0/VDD" "pixel_array_0/SF_IB" 90.5875
+cap "pixel_array_0/pixel_3/VDD" "pixel_array_0/CSA_VREF" -37.925
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/pixel_3/gring" -108.25
+cap "NB1" "pixel_array_0/pixel_3/gring" -190.6
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_3/VREF" -49.2
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/SF_IB" -39.375
+cap "NB1" "pixel_array_0/SF_IB" -23.8636
+cap "NB1" "pixel_array_0/VDD" -2.84217e-14
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_3/VREF" 5.75
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/pixel_3/gring" -8.1
+cap "pixel_array_0/VDD" "pixel_array_0/SF_IB" -266.389
+cap "pixel_array_0/pixel_3/VDD" "pixel_array_0/VDD" 2.44
+cap "pixel_array_0/pixel_3/VDD" "pixel_array_0/SF_IB" -0.18
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_3/gring" -56.265
+cap "pixel_array_0/pixel_2/NB1" "GND" 5.5
+cap "pixel_array_0/pixel_2/gring" "GND" 11.46
+cap "pixel_array_0/pixel_0/VREF" "pixel_array_0/ROW_SEL0" 4.14634
+cap "pixel_array_0/ROW_SEL0" "pixel_array_0/pixel_0/gring" -50
+cap "pixel_array_0/pixel_0/VREF" "pixel_array_0/ROW_SEL0" 26.4706
+cap "pixel_array_0/pixel_0/gring" "pixel_array_0/ROW_SEL0" -120.855
+cap "pixel_array_0/CSA_VREF" "pixel_array_0/pixel_0/gring" -190.6
+cap "VDD" "pixel_array_0/pixel_0/gring" 1.085
+cap "pixel_array_0/pixel_0/VDD" "pixel_array_0/CSA_VREF" -37.925
+cap "pixel_array_0/pixel_0/VDD" "VDD" -48.175
+cap "pixel_array_0/CSA_VREF" "SF_IB" -72.45
+cap "SF_IB" "VDD" 27.6437
+cap "VDD" "pixel_array_0/VREF" -56.4
+cap "VDD" "pixel_array_0/pixel_0/test" -117.5
+cap "pixel_array_0/VREF" "pixel_array_0/VBIAS" -11.4865
+cap "pixel_array_0/VDD" "pixel_array_0/SF_IB" -266.569
+cap "pixel_array_0/VDD" "pixel_array_0/VREF" 6.67
+cap "pixel_array_0/VREF" "pixel_array_0/pixel_0/test" -0.095
+cap "pixel_array_0/pixel_0/gring" "pixel_array_0/VDD" -56.265
+cap "pixel_array_0/VDD" "pixel_array_0/pixel_0/test" 7.035
+cap "bias_0/GND" "OUT_IB" 66.5357
+cap "OUT_IB" "bias_0/GND" 69.75
+cap "bias_0/SF_IB" "bias_0/VDD" 6.2069
+cap "bias_0/SF_IB" "bias_0/GND" 112.121
+cap "bias_0/GND" "bias_0/NB1" 6.66667
+cap "bias_0/OUT_IB" "bias_0/NB2" 40.4062
+cap "bias_0/NB1" "bias_0/NB2" -27.2727
+cap "bias_0/NB1" "bias_0/GND" 6.66667
+cap "bias_0/OUT_IB" "bias_0/NB2" 40.4062
+cap "bias_0/GND" "OUT_IB" 66.5357
+cap "bias_0/GND" "bias_0/AMP_IB" -98.25
+cap "bias_0/GND" "OUT_IB" 69.75
+merge "bias_0/NB1" "pixel_array_0/NB1" -3367.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -37800 -780 -458981 -12443 -636485 -2242 0 0 0 0 0 0
+merge "pixel_array_0/NB1" "NB1"
+merge "bias_0/GND" "m1_205720_680360#" -5089.66 -113319 -1826 0 0 0 0 0 0 21800 -922 4032 -902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32044 -1322 -252670 -21667 84158 -9435 76570 -3124 -431481 -3804 0 0 0 0
+merge "m1_205720_680360#" "pixel_array_0/GND"
+merge "pixel_array_0/GND" "pixel_array_0/m1_9000_n2970#"
+merge "pixel_array_0/m1_9000_n2970#" "pixel_array_0/pixel_5/shield"
+merge "pixel_array_0/pixel_5/shield" "pixel_array_0/m1_9000_n5970#"
+merge "pixel_array_0/m1_9000_n5970#" "pixel_array_0/pixel_8/shield"
+merge "pixel_array_0/pixel_8/shield" "pixel_array_0/VSUBS"
+merge "pixel_array_0/VSUBS" "opamp_diego_0/vss"
+merge "opamp_diego_0/vss" "GND"
+merge "bias_0/OUT_IB" "OUT_IB" -550.081 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 581360 0 -4400 -440 209965 -4417 0 0 0 0 0 0
+merge "OUT_IB" "m2_203660_679855#"
+merge "bias_0/NB2" "pixel_array_0/NB2" -464.417 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -760 324440 -1660 246185 -582 0 0 0 0 0 0
+merge "pixel_array_0/NB2" "NB2"
+merge "opamp_diego_0/vin_n" "opamp_diego_0/vout" -4655.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75632 -5764 552760 0 -1998150 -20940 0 0 0 0
+merge "opamp_diego_0/vout" "AOUT"
+merge "bias_0/VDD" "opamp_diego_0/vdd" -3547.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2027540 -11872 0 0 0 0 0 0 0 0 0 0
+merge "opamp_diego_0/vdd" "pixel_array_0/VDD"
+merge "pixel_array_0/VDD" "VDD"
+merge "pixel_array_0/CSA_VREF" "CSA_VREF" -540.627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18000 0 -401175 -2480 0 0 0 0 0 0
+merge "pixel_array_0/COL_SEL0" "COL_SEL0" -176.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40600 -1000 0 0 0 0
+merge "opamp_diego_0/vin_p" "pixel_array_0/a_540_n6880#" -7112.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5919758 -24195 0 0 0 0 0 0 0 0
+merge "pixel_array_0/a_540_n6880#" "a_208580_665590#"
+merge "pixel_array_0/COL_SEL2" "COL_SEL2" -139.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -74800 -1120 0 0 0 0
+merge "pixel_array_0/COL_SEL1" "COL_SEL1" -160.06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -85800 -1220 0 0 0 0
+merge "bias_0/SF_IB" "pixel_array_0/SF_IB" -203.619 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 137240 -260 -55570 -2022 0 0 0 0 0 0
+merge "pixel_array_0/SF_IB" "SF_IB"
+merge "opamp_diego_0/iref" "a_208960_678250#" -994.344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -416385 -4302 0 0 0 0 0 0 0 0
+merge "bias_0/AMP_IB" "AMP_IB" -1181.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33325 -790 -155900 -4977 0 0 0 0 0 0
+merge "pixel_array_0/ROW_SEL0" "ROW_SEL0" -233.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40500 -1080 0 0 0 0 0 0
+merge "pixel_array_0/ROW_SEL1" "ROW_SEL1" 119.075 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18850 -960 0 0 0 0 0 0
+merge "pixel_array_0/ROW_SEL2" "ROW_SEL2" -237.855 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54850 -1080 0 0 0 0 0 0
+merge "pixel_array_0/VREF" "VREF" -1419.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28025 -940 184450 -5600 -6500 -360 0 0 0 0
+merge "pixel_array_0/VBIAS" "VBIAS" -367.207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2100 -1140 0 0 -17500 -800 0 0 0 0

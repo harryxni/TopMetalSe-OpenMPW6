@@ -1,0 +1,124 @@
+** sch_path: /home/damic/CMOS/TopmetalSe/Pixel/Testbench/pixel_tb.sch
+**.subckt pixel_tb
+V1 VDD GND DC=1.8
+V2 PLUS GND DC=0.60
+V5 vbias GND DC=0.9
+V6 CSA GND DC=0.35
+XM1 NB1 NB1 GND GND sky130_fd_pr__nfet_01v8_lvt L=1.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I2 VDD NB1 DC=400n
+I3 VDD NB2 DC=80n
+XM3 NB2 NB2 GND GND sky130_fd_pr__nfet_01v8_lvt L=1.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x1 VDD GND SF_IB CSA PLUS gring PIX_OUT VDD vbias itest NB1 NB2 pixel
+I4 SF_IB GND DC=80n
+XM2 SF_IB SF_IB VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I5 GND itest DC=0 PULSE(0 100p 40m 0.01m 0.01m 10u)
+C2 itest net1 1f m=1
+V3 net1 GND AC=1p DC=0
+C1 VDD GND 10f m=1
+V4 gring GND DC=0v
+I1 PIX_OUT GND DC=10u
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /opt/OpenICEDA/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+.param array_size = 1
+.param pix_time = 0.5m
+
+
+.param row_time = {array_size*pix_time}
+
+.param col_time = {array_size*row_time}
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/damic/CMOS/TopmetalSe/Pixel/Schematic/pixel.sym # of pins=12
+** sym_path: /home/damic/CMOS/TopmetalSe/Pixel/Schematic/pixel.sym
+** sch_path: /home/damic/CMOS/TopmetalSe/Pixel/Schematic/pixel.sch
+.subckt pixel  VDD GND SF_IB CSA_VREF VREF gring PIX_OUT ROW_SEL VBIAS AMP_IN NB1 NB2
+X0 test_net a_2300_n405# GND VDD sky130_fd_pr__pfet_01v8_lvt ad=5e+11p pd=3e+06u as=8.3e+11p ps=5.9e+06u w=1e+06u l=1e+06u
+X1 a_2060_n375# AMP_IN a_2025_n1295# GND sky130_fd_pr__nfet_01v8_lvt ad=2.1525e+12p pd=1.76e+07u as=3.22e+12p ps=1.79e+07u w=7e+06u l=150000u
+X2 VDD a_2175_5# a_2175_5# VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=8.1e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X3 net1 test a_2730_5# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X4 VDD net1 a_2300_n405# GND sky130_fd_pr__nfet_01v8_lvt ad=1.15e+12p pd=8.3e+06u as=5e+11p ps=3e+06u w=1e+06u l=1e+06u
+X5 test VBIAS a_1930_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X6 VDD test_net a_2875_n460# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=8.975e+11p ps=7e+06u w=1e+06u l=150000u
+X7 a_2730_5# a_2175_5# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X8 net1 VBIAS a_2060_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=800000u
+X9 a_2300_n405# NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=9.2e+11p ps=6.1e+06u w=1e+06u l=1.15e+06u
+X10 AMP_IN a_2300_n405# sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X11 VDD SF_IB test_net VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X12 AMP_IN CSA_VREF a_2300_n405# VDD sky130_fd_pr__pfet_01v8_lvt ad=2.94e+11p pd=2.24e+06u as=2.73e+11p ps=2.14e+06u w=420000u l=8e+06u
+X13 a_2025_n1295# VREF a_1930_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X14 GND NB1 a_2025_n1295# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.2e+06u l=1e+06u
+X15 a_2875_n460# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=8e+11p ps=4.8e+06u w=2e+06u l=1e+06u
+X16 a_2175_5# test test VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+C0 AMP_IN gring 3.31fF
+C1 AMP_IN VDD 1.18fF
+C2 NB1 gring 1.40fF
+C3 AMP_IN a_2300_n405# 1.91fF
+C4 VDD gring 1.39fF
+C5 net1 VDD 1.56fF
+C6 AMP_IN CSA_VREF 1.66fF
+C7 a_2175_5# VDD 1.50fF
+C8 a_2300_n405# VDD 1.03fF
+C9 VDD SF_IB 2.32fF
+C10 CSA_VREF VDD 2.55fF
+C11 test VDD 2.18fF
+C12 NB1 GND 2.64fF
+C13 PIX_OUT GND 2.10fF
+C14 ROW_SEL GND 3.02fF
+C15 NB2 GND 1.24fF
+C16 VREF GND 1.11fF
+C17 VBIAS GND 1.07fF
+C18 AMP_IN GND 6.48fF
+C19 SF_IB GND -1.44fF
+C20 VDD GND 6.36fF
+C21 gring GND 3.35fF
+C22 a_2300_n405# GND 1.50fF
+
+
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+**** begin user architecture code
+
+
+
+
+
+.option gmin=0.0000000000000000000001
+.control
+
+save all
+
+noise v(PIX_OUT) v3 dec 10 1 1Meg
+setplot noise2
+print onoise_total
+
+tran 1u 80m
+plot v(PIX_OUT)
+
+
+*ac dec 10 1 100Meg
+*plot vdb(PIX_OUT) xlog
+.endc
+
+
+
+**** end user architecture code
+.end

@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -75,7 +75,7 @@ B 5 147.5 137.5 152.5 142.5 {name=io_clamp_high[2:0] dir=inout }
 B 5 147.5 157.5 152.5 162.5 {name=io_clamp_low[2:0] dir=inout }
 B 5 -152.5 57.5 -147.5 62.5 {name=user_clock2 dir=in }
 B 5 147.5 177.5 152.5 182.5 {name=user_irq[2:0] dir=out }
-T {@symname} -119.5 114 0 0 0.3 0.3 {}
+T {@symname} -169.5 214 0 0 0.3 0.3 {}
 T {@name} 135 -202 0 0 0.2 0.2 {}
 T {vdda1} 125 -184 0 1 0.2 0.2 {}
 T {vdda2} 125 -164 0 1 0.2 0.2 {}

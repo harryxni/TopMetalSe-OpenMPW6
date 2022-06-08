@@ -1,0 +1,85 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1608253231
+<< error_p >>
+rect -29 186 29 192
+rect -29 152 -17 186
+rect -29 146 29 152
+<< nwell >>
+rect -211 -324 211 324
+<< pmos >>
+rect -15 -105 15 105
+<< pdiff >>
+rect -73 93 -15 105
+rect -73 -93 -61 93
+rect -27 -93 -15 93
+rect -73 -105 -15 -93
+rect 15 93 73 105
+rect 15 -93 27 93
+rect 61 -93 73 93
+rect 15 -105 73 -93
+<< pdiffc >>
+rect -61 -93 -27 93
+rect 27 -93 61 93
+<< nsubdiff >>
+rect -175 254 -79 288
+rect 79 254 175 288
+rect -175 192 -141 254
+rect 141 192 175 254
+rect -175 -254 -141 -192
+rect 141 -254 175 -192
+rect -175 -288 -79 -254
+rect 79 -288 175 -254
+<< nsubdiffcont >>
+rect -79 254 79 288
+rect -175 -192 -141 192
+rect 141 -192 175 192
+rect -79 -288 79 -254
+<< poly >>
+rect -33 186 33 202
+rect -33 152 -17 186
+rect 17 152 33 186
+rect -33 136 33 152
+rect -15 105 15 136
+rect -15 -143 15 -105
+<< polycont >>
+rect -17 152 17 186
+<< locali >>
+rect -175 254 -79 288
+rect 79 254 175 288
+rect -175 192 -141 254
+rect 141 192 175 254
+rect -33 152 -17 186
+rect 17 152 33 186
+rect -61 93 -27 109
+rect -61 -109 -27 -93
+rect 27 93 61 109
+rect 27 -109 61 -93
+rect -175 -254 -141 -192
+rect 141 -254 175 -192
+rect -175 -288 -79 -254
+rect 79 -288 175 -254
+<< viali >>
+rect -17 152 17 186
+rect -61 -93 -27 93
+rect 27 -93 61 93
+<< metal1 >>
+rect -29 186 29 192
+rect -29 152 -17 186
+rect 17 152 29 186
+rect -29 146 29 152
+rect -67 93 -21 105
+rect -67 -93 -61 93
+rect -27 -93 -21 93
+rect -67 -105 -21 -93
+rect 21 93 67 105
+rect 21 -93 27 93
+rect 61 -93 67 93
+rect 21 -105 67 -93
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string FIXED_BBOX -158 -271 158 271
+string parameters w 1.05 l 0.15 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viagl 0 viagr 0 viagt 0 viagb 0 viagate 100 viadrn 100 viasrc 100
+string library sky130
+<< end >>

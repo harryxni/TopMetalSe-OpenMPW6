@@ -1,0 +1,219 @@
+** sch_path: /home/damic/CMOS/TopmetalSe/Pixel/Testbench/pixelArray_tb.sch
+**.subckt pixelArray_tb
+V1 VDD GND 1.8
+V2 PLUS GND DC=0.60
+V5 vbias GND DC=0.9
+V6 CSA GND DC=0.35
+XM1 NB1 NB1 GND GND sky130_fd_pr__nfet_01v8_lvt L=1.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I2 VDD NB1 400n
+I3 VDD NB2 30n
+XM3 NB2 NB2 GND GND sky130_fd_pr__nfet_01v8_lvt L=1.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 COL0 COL_SEL0 pix_out GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vrow0 ROW_SEL0 GND 0 pulse(0.0 1.8 {pix_time} 0.1m 0.1m {pix_time} {row_time})
+Vrow1 ROW_SEL1 GND 0.0 pulse(0.0 1.8 {2*pix_time} 0.1m 0.1m {pix_time} {row_time})
+Vcol0 COL_SEL0 GND 0 pulse(0.0 1.8 {pix_time} 0.1m 0.1m {row_time} {col_time})
+Vcol1 COL_SEL1 GND 0.0 pulse(0.0 1.8 {pix_time+row_time} 0.1m 0.1m {row_time} {col_time})
+C1 i_empty GND 10f m=1
+I4 sf_ib GND 80n
+XM5 sf_ib sf_ib VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+Vrow2 ROW_SEL2 GND 0.0 pulse(0.0 1.8 {3*pix_time} 0.1m 0.1m {pix_time} {row_time})
+XM6 COL1 COL_SEL1 pix_out GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 COL2 COL_SEL2 pix_out GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vcol4 COL_SEL2 GND 0.0 pulse(0.0 1.8 {pix_time+2*row_time} 0.1m 0.1m {row_time} {col_time})
+I0 GND itest PULSE(0 10p 120m 0.01m 0.01m 0.1m 1s)
+V3 GRING GND DC=0
+I1 VDD test 10u
+XM4 test test GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 pix_out test GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+V4 net2 GND DC=1.4V
+V8 net3 GND DC=510m
+x2 VDD net4 AOUT pix_out AOUT GND opamp
+I5 net4 GND 100u
+
+x1 i_empty itest i_empty i_empty i_empty i_empty i_empty i_empty i_empty ROW_SEL0 ROW_SEL1 ROW_SEL2 VDD GND NB1 NB2
++sf_ib vbias PLUS CSA COL0 COL1 COL2 array_symtb
+
+C2 net1 itest 10f m=1
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /opt/OpenICEDA/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.param array_size = 3
+.param pix_time = 1m
+
+
+.param row_time = {array_size*pix_time}
+
+.param col_time = {array_size*row_time}
+
+
+
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/damic/CMOS/TopmetalSe/Pixel/Testbench/array_symtb.sym # of pins=23
+** sym_path: /home/damic/CMOS/TopmetalSe/Pixel/Testbench/array_symtb.sym
+** sch_path: /home/damic/CMOS/TopmetalSe/Pixel/Testbench/array_symtb.sch
+
+
+
+.subckt array_symtb PIX0_IN PIX1_IN PIX2_IN PIX3_IN PIX4_IN PIX5_IN PIX6_IN PIX7_IN PIX8_IN 
++ROW_SEL0 ROW_SEL1 ROW_SEL2 
++VDD GND NB1 NB2 SF_IB VBIAS VREF CSA_VREF 
++PIX_OUT0 PIX_OUT1 PIX_OUT2 
+Xpixel_0 VREF ROW_SEL0 NB1 VBIAS NB2 PIX0_IN SF_IB PIX_OUT0 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_1 VREF ROW_SEL0 NB1 VBIAS NB2 PIX1_IN SF_IB PIX_OUT1 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_2 VREF ROW_SEL0 NB1 VBIAS NB2 PIX2_IN SF_IB PIX_OUT2 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_3 VREF ROW_SEL1 NB1 VBIAS NB2 PIX3_IN SF_IB PIX_OUT0 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_4 VREF ROW_SEL1 NB1 VBIAS NB2 PIX4_IN SF_IB PIX_OUT1 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_5 VREF ROW_SEL1 NB1 VBIAS NB2 PIX5_IN SF_IB PIX_OUT2 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_6 VREF ROW_SEL2 NB1 VBIAS NB2 PIX6_IN SF_IB PIX_OUT0 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_7 VREF ROW_SEL2 NB1 VBIAS NB2 PIX7_IN SF_IB PIX_OUT1 CSA_VREF pixel_8/gring
++ VDD GND pixel
+Xpixel_8 VREF ROW_SEL2 NB1 VBIAS NB2 PIX8_IN SF_IB PIX_OUT2 CSA_VREF pixel_8/gring
++ VDD GND pixel
+C0 NB1 SF_IB 3.56fF
+C1 SF_IB VREF 1.12fF
+C2 PIX_OUT2 GND 5.95fF
+C3 PIX8_IN GND 6.48fF
+C4 pixel_8/gring GND 15.94fF
+C6 NB1 GND 23.61fF
+C7 PIX_OUT1 GND 5.95fF
+C8 ROW_SEL2 GND 8.96fF
+C9 PIX7_IN GND 6.49fF
+C10 CSA_VREF GND 1.26fF
+C11 SF_IB GND -11.95fF
+C12 VDD GND 70.61fF
+C14 PIX_OUT0 GND 5.97fF
+C15 PIX6_IN GND 6.49fF
+C17 PIX5_IN GND 6.48fF
+C19 ROW_SEL1 GND 8.84fF
+C20 PIX4_IN GND 6.49fF
+C22 NB2 GND 12.04fF
+C23 VREF GND 10.66fF
+C24 VBIAS GND 10.24fF
+C25 PIX3_IN GND 6.49fF
+C27 PIX2_IN GND 6.49fF
+C29 ROW_SEL0 GND 8.84fF
+C30 PIX1_IN GND 6.48fF
+C32 PIX0_IN GND 6.49fF
+.ends
+
+
+
+
+
+.subckt pixel VREF ROW_SEL NB1 VBIAS NB2 AMP_IN SF_IB PIX_OUT CSA_VREF gring VDD GND
+X0 test_net net2 GND VDD sky130_fd_pr__pfet_01v8_lvt ad=5e+11p pd=3e+06u as=8.3e+11p ps=5.9e+06u w=1e+06u l=1e+06u
+X1 a_2060_n375# AMP_IN a_2025_n1295# GND sky130_fd_pr__nfet_01v8_lvt ad=2.1525e+12p pd=1.76e+07u as=3.22e+12p ps=1.79e+07u w=7e+06u l=150000u
+X2 VDD a_2175_5# a_2175_5# VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=8.1e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X3 net1 test a_2730_5# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X4 VDD net1 net2 GND sky130_fd_pr__nfet_01v8_lvt ad=1.15e+12p pd=8.3e+06u as=5e+11p ps=3e+06u w=1e+06u l=1e+06u
+X5 test VBIAS a_1930_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X6 VDD test_net a_2875_n460# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=8.975e+11p ps=7e+06u w=1e+06u l=150000u
+X7 a_2730_5# a_2175_5# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X8 net1 VBIAS a_2060_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=800000u
+X9 net2 NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=9.2e+11p ps=6.1e+06u w=1e+06u l=1.15e+06u
+X10 AMP_IN net2 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X11 VDD SF_IB test_net VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X12 AMP_IN CSA_VREF net2 VDD sky130_fd_pr__pfet_01v8_lvt ad=2.94e+11p pd=2.24e+06u as=2.73e+11p ps=2.14e+06u w=420000u l=8e+06u
+X13 a_2025_n1295# VREF a_1930_n375# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X14 GND NB1 a_2025_n1295# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.2e+06u l=1e+06u
+X15 a_2875_n460# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=8e+11p ps=4.8e+06u w=2e+06u l=1e+06u
+X16 a_2175_5# test test VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+C5 gring AMP_IN 3.31fF
+C10 VDD AMP_IN 1.18fF
+C13 PIX_OUT GND 2.10fF
+C14 ROW_SEL GND 3.02fF
+C18 AMP_IN GND 6.48fF
+C20 VDD GND 6.36fF
+C21 gring GND 3.35fF
+.ends
+
+
+
+
+.subckt opamp  vdd iref vin_n vin_p vout vss
+*.iopin vdd
+*.ipin vin_n
+*.ipin vin_p
+*.ipin iref
+*.opin vout
+*.iopin vss
+XM1 vbn vin_n vp vp sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200
+XM2 voe1 vin_p vp vp sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200
+XM3 vbn vbn vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM4 voe1 vbn vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM5 vp iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=30 m=30
+XM7 vout iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=150 m=150
+XM8 iref iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=15 m=15
+XM9 net1 vdd voe1 vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=6 m=6
+XC1 net1 vout sky130_fd_pr__cap_mim_m3_1 W=17.55 L=15 MF=6 m=6
+XM6 vout voe1 vss vss sky130_fd_pr__nfet_01v8 L=0.45 W=4.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=150 m=150
+.ends
+
+
+
+
+
+
+* expanding   symbol:  /home/damic/CMOS/TopmetalSe/Pixel/Schematic/csa.sym # of pins=9
+** sym_path: /home/damic/CMOS/TopmetalSe/Pixel/Schematic/csa.sym
+** sch_path: /home/damic/CMOS/TopmetalSe/Pixel/Schematic/csa.sch
+.GLOBAL GND
+.GLOBAL VDD
+**** begin user architecture code
+
+
+.options savecurrents
+.options gmin=0.0000000000000000000001
+.control
+save all
+*save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+op
+tran 1m 200m
+
+plot v(pix_out)
+.endc
+
+
+**** end user architecture code
+.end

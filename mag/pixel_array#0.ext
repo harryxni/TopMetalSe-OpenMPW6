@@ -1,0 +1,655 @@
+timestamp 1654643737
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use pixel pixel_8 1 0 2200 0 1 2700
+use pixel pixel_7 1 0 -3800 0 1 2700
+use pixel pixel_6 1 0 -800 0 1 2700
+use pixel pixel_5 1 0 2200 0 1 -300
+use pixel pixel_4 1 0 2200 0 1 -3300
+use pixel pixel_3 1 0 -3800 0 1 -300
+use pixel pixel_2 1 0 -800 0 1 -300
+use pixel pixel_1 1 0 -3800 0 1 -3300
+use pixel pixel_0 1 0 -800 0 1 -3300
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "PIX8_IN" 25 7040 -4960 7240 -4760 m5
+port "PIX7_IN" 22 4040 -4960 4240 -4760 m5
+port "PIX6_IN" 19 1040 -4960 1240 -4760 m5
+port "PIX5_IN" 18 7040 -1960 7240 -1760 m5
+port "PIX4_IN" 17 4040 -1960 4240 -1760 m5
+port "PIX3_IN" 16 1040 -1960 1240 -1760 m5
+port "PIX2_IN" 15 7040 1040 7240 1240 m5
+port "PIX1_IN" 14 4040 1040 4240 1240 m5
+port "PIX0_IN" 12 1040 1040 1240 1240 m5
+port "GRING" 13 -2000 2840 -2000 2840 m5
+port "CSA_VREF" 6 -480 -7600 -480 -7600 m4
+port "CSA_VREF" 6 -560 2460 40 2550 m3
+port "CSA_VREF" 6 -560 -3540 40 -3450 m3
+port "CSA_VREF" 6 -560 -540 40 -450 m3
+port "SF_IB" 5 -560 2750 40 2840 m3
+port "SF_IB" 5 -560 -3250 40 -3160 m3
+port "SF_IB" 5 -560 -250 40 -160 m3
+port "VBIAS" 1 -3000 3605 -3000 3605 m4
+port "VBIAS" 1 -1000 3550 -1000 3550 m4
+port "VBIAS" 1 500 3000 570 3600 m2
+port "VBIAS" 1 6500 3000 6570 3600 m2
+port "VBIAS" 1 3500 3000 3570 3600 m2
+port "NB1" 7 -740 3560 -740 3560 m2
+port "NB1" 7 -560 160 40 250 m3
+port "NB1" 7 -560 -5840 40 -5750 m3
+port "NB1" 7 -560 -2840 40 -2750 m3
+port "NB2" 3 0 4040 0 4040 m2
+port "NB2" 3 1020 3000 1090 3600 m2
+port "NB2" 3 7020 3000 7090 3600 m2
+port "NB2" 3 4020 3000 4090 3600 m2
+port "ROW_SEL2" 11 -3000 -4475 -3000 -4475 m2
+port "ROW_SEL2" 11 -3000 -4520 -3000 -4520 m2
+port "ROW_SEL2" 11 -560 -4520 40 -4430 m3
+port "ROW_SEL1" 10 -3000 -1475 -3000 -1475 m2
+port "ROW_SEL1" 10 -3000 -1520 -3000 -1520 m2
+port "ROW_SEL1" 10 -560 -1520 40 -1430 m3
+port "GND" 8 9400 30 9400 30 m1
+port "GND" 8 9000 30 9600 120 m1
+port "GND" 8 9000 -5970 9600 -5880 m1
+port "GND" 8 9000 -2970 9600 -2880 m1
+port "ROW_SEL0" 9 -3000 1525 -3000 1525 m2
+port "ROW_SEL0" 9 -3000 1480 -3000 1480 m2
+port "ROW_SEL0" 9 -560 1480 40 1570 m3
+port "VDD" 4 -2000 0 -2000 0 m1
+port "VDD" 4 -560 2880 40 2970 m1
+port "VDD" 4 -560 -3120 40 -3030 m1
+port "VDD" 4 -560 -120 40 -30 m1
+port "VREF" 2 -3000 3400 -3000 3400 m2
+port "VREF" 2 -1000 3350 -1000 3350 m1
+port "VREF" 2 60 3000 130 3600 m2
+port "VREF" 2 6060 3000 6130 3600 m2
+port "VREF" 2 3060 3000 3130 3600 m2
+port "ARRAY_OUT" 27 8940 -7100 8940 -7100 m2
+port "COL_SEL2" 28 6220 -7100 6440 -6700 m4
+port "COL_SEL1" 24 3220 -7100 3440 -6700 m4
+port "COL_SEL0" 21 220 -7100 440 -6700 m4
+port "PIX_OUT2" 26 8630 -6200 8780 -6000 m4
+port "PIX_OUT1" 23 5630 -6200 5780 -6000 m4
+port "PIX_OUT0" 20 2630 -6200 2780 -6000 m4
+node "PIX8_IN" 0 162 7040 -4960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX7_IN" 0 162 4040 -4960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX6_IN" 0 162 1040 -4960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX5_IN" 0 162 7040 -1960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX4_IN" 0 162 4040 -1960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX3_IN" 0 162 1040 -1960 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX2_IN" 0 162 7040 1040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX1_IN" 0 162 4040 1040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "PIX0_IN" 0 162 1040 1040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0
+node "GRING" 0 253.5 -2000 2840 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 640000 4640 0 0
+node "CSA_VREF" 6 4886.34 -560 -540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 298200 7140 1122000 20620 0 0 0 0
+node "SF_IB" 7 4412.47 -560 -250 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1163700 26040 0 0 0 0 0 0
+node "VBIAS" 9 5217.97 3500 3000 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151800 4620 36300 1320 1232000 22620 0 0 0 0
+node "NB1" 13 4994.99 -560 -2840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1100000 20220 222600 5460 0 0 0 0 0 0
+node "NB2" 15 5025.75 4020 3000 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1208400 24460 0 0 0 0 0 0 0 0
+node "m1_2860_n5910#" 0 97.48 2860 -5910 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 440 0 0 0 0 0 0 0 0 0 0
+node "ROW_SEL2" 6 2087.83 -560 -4520 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144000 3380 207000 4960 90000 2180 0 0 0 0 0 0
+node "ROW_SEL1" 6 2087.83 -560 -1520 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144000 3380 207000 4960 90000 2180 0 0 0 0 0 0
+node "GND" 7 5551 9000 -2970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1980000 20800 0 0 0 0 0 0 0 0 0 0
+node "ROW_SEL0" 6 2087.83 -560 1480 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144000 3380 207000 4960 90000 2180 0 0 0 0 0 0
+node "VDD" 10 7733.32 -560 -120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2618800 29420 0 0 0 0 0 0 0 0 0 0
+node "VREF" 17 6357.29 3060 3000 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1074700 19760 371300 8700 0 0 0 0 0 0 0 0
+node "ARRAY_OUT" 8053 8360.9 8940 -7100 m2 0 0 0 0 0 0 0 0 384000 10080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 960000 10800 1840000 18800 1840000 18800 0 0 0 0 0 0 0 0
+node "COL_SEL2" 273 1331.83 6220 -7100 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 727800 4700 0 0 48400 880 48400 880 48400 880 48400 880 134200 1660 0 0 0 0
+node "COL_SEL1" 273 1331.83 3220 -7100 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 727800 4700 0 0 48400 880 48400 880 48400 880 48400 880 134200 1660 0 0 0 0
+node "COL_SEL0" 273 1488.63 220 -7100 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 727800 4700 0 0 48400 880 48400 880 48400 880 48400 880 134200 1660 0 0 0 0
+node "PIX_OUT2" 2055 2663.4 8630 -6200 m4 0 0 0 0 0 0 0 0 160000 3400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 3500 272000 3540 313600 4760 313600 4760 322600 4880 0 0 0 0
+node "PIX_OUT1" 2055 2663.4 5630 -6200 m4 0 0 0 0 0 0 0 0 160000 3400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 3500 272000 3540 313600 4760 313600 4760 322600 4880 0 0 0 0
+node "PIX_OUT0" 2055 2663.4 2630 -6200 m4 0 0 0 0 0 0 0 0 160000 3400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 3500 272000 3540 313600 4760 313600 4760 322600 4880 0 0 0 0
+substrate "w_514_n6906#" 0 0 514 -6906 pw 3132192 13704 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "SF_IB" "ROW_SEL0" 193.815
+cap "VBIAS" "SF_IB" 131.99
+cap "NB1" "VDD" 625.725
+cap "CSA_VREF" "NB1" 395.97
+cap "COL_SEL1" "ARRAY_OUT" 767.8
+cap "ROW_SEL1" "VDD" 257.75
+cap "ROW_SEL1" "CSA_VREF" 253.89
+cap "VREF" "VDD" 214.342
+cap "SF_IB" "NB1" 770.942
+cap "CSA_VREF" "VDD" 174.925
+cap "NB2" "VREF" 399.285
+cap "ROW_SEL1" "SF_IB" 193.815
+cap "ROW_SEL2" "NB1" 220.515
+cap "SF_IB" "VREF" 222.685
+cap "SF_IB" "VDD" 1765.24
+cap "SF_IB" "CSA_VREF" 987.651
+cap "ROW_SEL2" "VDD" 257.75
+cap "ROW_SEL2" "CSA_VREF" 253.89
+cap "GRING" "NB1" 111.48
+cap "COL_SEL2" "ARRAY_OUT" 767.8
+cap "GRING" "VDD" 624.1
+cap "COL_SEL0" "ARRAY_OUT" 416
+cap "NB1" "ROW_SEL0" 220.515
+cap "VBIAS" "NB1" 80.85
+cap "SF_IB" "GRING" 607.7
+cap "VBIAS" "VREF" 755.885
+cap "ROW_SEL0" "VDD" 257.75
+cap "CSA_VREF" "ROW_SEL0" 253.89
+cap "ROW_SEL1" "NB1" 220.515
+cap "VREF" "NB1" 206.321
+cap "NB2" "VBIAS" 224.171
+device msubckt sky130_fd_pr__nfet_01v8_lvt 6540 -6800 6541 -6799 l=400 w=1600 "w_514_n6906#" "COL_SEL2" 800 0 "ARRAY_OUT" 1600 0 "PIX_OUT2" 1600 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3540 -6800 3541 -6799 l=400 w=1600 "w_514_n6906#" "COL_SEL1" 800 0 "ARRAY_OUT" 1600 0 "PIX_OUT1" 1600 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 540 -6800 541 -6799 l=400 w=1600 "w_514_n6906#" "COL_SEL0" 800 0 "ARRAY_OUT" 1600 0 "PIX_OUT0" 1600 0
+cap "PIX_OUT0" "pixel_1/GND" 7.05543
+cap "pixel_1/NB1" "PIX_OUT0" 3.03947
+cap "pixel_0/NB1" "PIX_OUT1" 3.03947
+cap "PIX_OUT1" "pixel_1/GND" 7.05543
+cap "pixel_4/NB1" "PIX_OUT2" 3.03947
+cap "pixel_4/GND" "PIX_OUT2" 7.05543
+cap "pixel_1/gring" "NB1" -33.6
+cap "PIX_OUT0" "pixel_1/gring" 1245.2
+cap "PIX_OUT0" "pixel_1/NB2" 66.6667
+cap "pixel_1/GND" "NB1" 2.7
+cap "NB1" "PIX_OUT0" 240.383
+cap "NB1" "pixel_1/gring" 69.7
+cap "PIX_OUT0" "pixel_1/VBIAS" 25
+cap "pixel_1/GND" "PIX_OUT0" 192.68
+cap "PIX_OUT0" "pixel_1/shield" 487.875
+cap "pixel_1/NB1" "pixel_1/gring" 112
+cap "pixel_1/gring" "PIX_OUT0" 806.225
+cap "pixel_1/gring" "pixel_1/shield" 96
+cap "pixel_1/NB1" "PIX_OUT0" 400.909
+cap "pixel_1/NB1" "PIX_OUT1" 183.11
+cap "PIX_OUT1" "pixel_1/gring" 882.2
+cap "pixel_1/GND" "pixel_1/gring" -238.55
+cap "PIX_OUT1" "pixel_1/GND" 136.43
+cap "PIX_OUT0" "pixel_0/VREF" 27.7778
+cap "pixel_1/NB1" "pixel_1/gring" -19.6
+cap "pixel_1/NB1" "PIX_OUT0" 51.5455
+cap "pixel_1/gring" "PIX_OUT0" -1042.18
+cap "PIX_OUT1" "pixel_0/VBIAS" 25
+cap "pixel_0/NB2" "PIX_OUT1" 66.6667
+cap "pixel_0/NB1" "PIX_OUT1" 400.909
+cap "pixel_0/gring" "PIX_OUT1" 754.225
+cap "pixel_0/shield" "PIX_OUT1" 544.125
+cap "PIX_OUT1" "pixel_4/VREF" 27.7778
+cap "pixel_4/VBIAS" "PIX_OUT2" 25
+cap "pixel_0/NB1" "PIX_OUT2" 89.994
+cap "PIX_OUT1" "pixel_0/gring" -702.105
+cap "PIX_OUT2" "pixel_4/GND" 80.1804
+cap "pixel_0/gring" "pixel_0/NB1" -19.6
+cap "pixel_0/gring" "pixel_4/GND" -238.55
+cap "PIX_OUT1" "pixel_0/NB1" 108.818
+cap "pixel_0/gring" "PIX_OUT2" 519.2
+cap "pixel_4/gring" "PIX_OUT2" 1085.14
+cap "pixel_4/shield" "PIX_OUT2" 600.375
+cap "pixel_4/NB2" "PIX_OUT2" 66.6667
+cap "pixel_4/NB1" "PIX_OUT2" 436.753
+cap "pixel_4/gring" "PIX_OUT2" -394.105
+cap "pixel_4/NB1" "PIX_OUT2" 166.091
+cap "pixel_4/gring" "GND" 47.85
+cap "pixel_4/NB1" "GND" 5.5
+cap "ROW_SEL2" "pixel_1/VREF" 7.03125
+cap "ROW_SEL2" "pixel_1/gring" -36
+cap "pixel_1/gring" "ROW_SEL2" 117.45
+cap "CSA_VREF" "pixel_1/net1" 3
+cap "VDD" "CSA_VREF" 6.68
+cap "CSA_VREF" "pixel_1/gring" 54.6
+cap "ROW_SEL2" "pixel_1/a_4120_n750#" 0.3
+cap "pixel_1/VREF" "ROW_SEL2" 18.8412
+cap "pixel_1/test" "CSA_VREF" 8.3
+cap "VDD" "pixel_1/gring" -0.27
+cap "CSA_VREF" "pixel_1/VREF" 11.81
+cap "pixel_1/VREF" "pixel_1/gring" -0.77
+cap "pixel_1/a_4050_n2590#" "ROW_SEL2" 3.75
+cap "pixel_1/GND" "ROW_SEL2" -5.68434e-14
+cap "pixel_1/VREF" "ROW_SEL2" 0.18
+cap "CSA_VREF" "PIX6_IN" 5.68434e-14
+cap "pixel_1/GND" "ROW_SEL2" 0.312
+cap "CSA_VREF" "SF_IB" -24.0545
+cap "ROW_SEL2" "pixel_1/a_3860_n750#" 0.3
+cap "pixel_1/GND" "pixel_1/gring" -3.948
+cap "CSA_VREF" "pixel_1/VBIAS" 12.26
+cap "pixel_1/AMP_IN" "ROW_SEL2" 0.18
+cap "pixel_1/ROW_SEL" "pixel_1/gring" 168
+cap "pixel_0/test" "pixel_1/SF_IB" 9.42857
+cap "pixel_1/CSA_VREF" "PIX7_IN" 2.84217e-14
+cap "pixel_1/ROW_SEL" "pixel_1/gring" -19.6
+cap "pixel_1/CSA_VREF" "pixel_0/test" 14.795
+cap "pixel_1/CSA_VREF" "pixel_1/gring" -79.1
+cap "pixel_1/VDD" "pixel_1/gring" -1.42109e-14
+cap "pixel_3/PIX_OUT" "pixel_0/VREF" 3.7037
+cap "pixel_1/AMP_IN" "pixel_0/net1" 5.07692
+cap "pixel_0/VREF" "pixel_1/SF_IB" 43.75
+cap "pixel_1/CSA_VREF" "pixel_0/VREF" 48.6486
+cap "pixel_1/CSA_VREF" "pixel_1/VDD" -2.7
+cap "pixel_1/AMP_IN" "pixel_0/test" 69.5538
+cap "pixel_0/gring" "pixel_0/ROW_SEL" -19.6
+cap "pixel_4/CSA_VREF" "pixel_4/VDD" 5.68434e-14
+cap "pixel_4/VREF" "pixel_0/SF_IB" 43.75
+cap "pixel_4/VREF" "pixel_4/CSA_VREF" 48.6486
+cap "pixel_0/AMP_IN" "pixel_4/test" 69.5538
+cap "pixel_0/gring" "pixel_4/CSA_VREF" -79.1
+cap "pixel_4/test" "pixel_0/SF_IB" 9.42857
+cap "pixel_0/gring" "pixel_4/VDD" -1.42109e-14
+cap "pixel_0/AMP_IN" "pixel_4/net1" 5.07692
+cap "pixel_4/test" "pixel_4/CSA_VREF" 13.445
+cap "pixel_4/VREF" "pixel_2/PIX_OUT" 3.7037
+cap "pixel_0/AMP_IN" "pixel_4/VDD" -1.77636e-14
+cap "pixel_0/SF_IB" "pixel_4/CSA_VREF" 1.42109e-14
+cap "SF_IB" "pixel_1/test" -170
+cap "pixel_1/VDD" "SF_IB" -82
+cap "NB1" "pixel_1/gring" -33.6
+cap "SF_IB" "VDD" -83
+cap "pixel_1/VREF" "SF_IB" 11.81
+cap "pixel_1/VBIAS" "pixel_1/VREF" -2.84217e-14
+cap "pixel_1/gring" "VDD" 46.725
+cap "NB1" "pixel_1/a_4350_10#" 35.7446
+cap "NB1" "SF_IB" 217.721
+cap "SF_IB" "CSA_VREF" -24.0545
+cap "NB1" "pixel_3/GND" 2.7
+cap "VDD" "SF_IB" 9.175
+cap "pixel_1/test" "SF_IB" 11.5
+cap "pixel_3/GND" "VDD" 900
+cap "pixel_1/gring" "pixel_1/NB2" -12.8
+cap "pixel_1/gring" "SF_IB" 89.9
+cap "pixel_1/gring" "pixel_1/VBIAS" -11.2
+cap "NB1" "VDD" 34.6154
+cap "NB1" "pixel_1/test" 40.474
+cap "pixel_1/gring" "pixel_1/VREF" -11.585
+cap "pixel_3/GND" "pixel_1/a_4350_10#" 11.7333
+cap "pixel_1/gring" "NB1" 69.7
+cap "pixel_3/NB1" "pixel_3/gring" 112
+cap "pixel_3/gring" "pixel_3/shield" 96
+cap "pixel_3/gring" "pixel_1/VDD" 96
+cap "pixel_3/shield" "pixel_1/VDD" 1050
+cap "pixel_3/gring" "pixel_1/SF_IB" 112
+cap "pixel_3/NB1" "pixel_1/SF_IB" 259.412
+cap "pixel_1/SF_IB" "pixel_0/test" 8.33718
+cap "pixel_0/VREF" "pixel_3/gring" -11.2
+cap "pixel_1/SF_IB" "pixel_3/gring" -19.6
+cap "pixel_0/VBIAS" "pixel_3/gring" -11.2
+cap "pixel_0/a_4350_10#" "pixel_3/GND" 11.7333
+cap "pixel_1/VDD" "pixel_1/SF_IB" -2.7
+cap "pixel_0/test" "pixel_3/NB1" 40.474
+cap "pixel_3/gring" "pixel_3/NB1" -19.6
+cap "pixel_1/VDD" "pixel_3/NB1" 34.6154
+cap "pixel_1/CSA_VREF" "pixel_1/SF_IB" 1.42109e-14
+cap "pixel_3/PIX_OUT" "pixel_3/NB1" -2.84217e-14
+cap "pixel_1/VDD" "pixel_0/test" 34.0312
+cap "pixel_0/VREF" "pixel_1/SF_IB" 143.75
+cap "pixel_1/VDD" "pixel_3/gring" -128.275
+cap "pixel_3/PIX_OUT" "pixel_3/gring" -232
+cap "pixel_0/VREF" "pixel_0/VBIAS" -2.84217e-14
+cap "pixel_0/a_4350_10#" "pixel_3/NB1" 35.7446
+cap "pixel_3/gring" "pixel_3/GND" -238.55
+cap "pixel_1/VDD" "pixel_3/GND" 1050
+cap "pixel_1/SF_IB" "pixel_3/NB1" 260.787
+cap "pixel_0/a_4350_10#" "pixel_1/VDD" -1.7
+cap "pixel_0/VDD" "pixel_2/shield" 1050
+cap "pixel_0/SF_IB" "pixel_2/NB1" 259.412
+cap "pixel_0/NB2" "pixel_0/gring" -12.8
+cap "pixel_4/test" "pixel_0/SF_IB" 8.33718
+cap "pixel_2/PIX_OUT" "pixel_2/gring" -232
+cap "pixel_4/test" "pixel_4/VDD" 34.0312
+cap "pixel_0/SF_IB" "pixel_2/gring" -19.6
+cap "pixel_4/VDD" "pixel_2/gring" -128.275
+cap "pixel_4/CSA_VREF" "pixel_0/SF_IB" -1.42109e-14
+cap "pixel_0/net2" "pixel_4/VDD" 7.10543e-15
+cap "pixel_4/VREF" "pixel_2/gring" -11.2
+cap "pixel_5/GND" "pixel_4/VDD" 1050
+cap "pixel_2/NB1" "pixel_2/PIX_OUT" -2.84217e-14
+cap "pixel_0/SF_IB" "pixel_2/NB1" 259.861
+cap "pixel_4/VREF" "pixel_4/VBIAS" -2.84217e-14
+cap "pixel_4/VDD" "pixel_2/NB1" 17.3077
+cap "pixel_4/a_4350_10#" "pixel_5/GND" 11.7333
+cap "pixel_4/a_4350_10#" "pixel_2/NB1" 35.7446
+cap "pixel_0/SF_IB" "pixel_4/VDD" -1.13687e-13
+cap "pixel_4/VBIAS" "pixel_2/gring" -11.2
+cap "pixel_0/test_net" "pixel_4/VDD" 9.9476e-14
+cap "pixel_5/GND" "pixel_2/gring" -238.55
+cap "pixel_4/VREF" "pixel_0/SF_IB" 143.75
+cap "pixel_4/test" "pixel_2/NB1" 40.474
+cap "pixel_2/NB1" "pixel_2/gring" -19.6
+cap "pixel_4/a_4350_10#" "pixel_4/VDD" -18.7
+cap "pixel_5/NB1" "pixel_4/SF_IB" 260.338
+cap "pixel_5/shield" "pixel_4/VDD" 1050
+cap "pixel_5/NB1" "pixel_4/VDD" 17.3077
+cap "pixel_4/gring" "pixel_4/NB2" -12.8
+cap "pixel_5/NB1" "GND" 5.5
+cap "pixel_5/gring" "GND" 47.85
+cap "pixel_5/NB1" "pixel_4/SF_IB" 148.684
+cap "pixel_4/VDD" "GND" 600
+cap "pixel_5/PIX_OUT" "pixel_5/gring" -232
+cap "ROW_SEL1" "pixel_3/gring" -36
+cap "ROW_SEL1" "pixel_3/VREF" 7.03125
+cap "pixel_3/AMP_IN" "ROW_SEL1" 0.18
+cap "ROW_SEL1" "pixel_3/gring" 117.45
+cap "ROW_SEL1" "pixel_3/a_4120_n750#" 0.3
+cap "pixel_3/a_3860_n750#" "ROW_SEL1" 0.3
+cap "pixel_3/GND" "pixel_3/gring" -3.948
+cap "ROW_SEL1" "pixel_3/VREF" 18.8412
+cap "pixel_3/a_4050_n2590#" "ROW_SEL1" 3.75
+cap "ROW_SEL1" "pixel_3/VREF" 0.18
+cap "ROW_SEL1" "pixel_3/GND" -5.68434e-14
+cap "ROW_SEL1" "pixel_3/GND" 0.312
+cap "pixel_3/VREF" "pixel_3/gring" -0.385
+cap "pixel_3/ROW_SEL" "pixel_3/gring" 168
+cap "pixel_2/VDD" "pixel_3/gring" 3.55271e-15
+cap "pixel_2/VREF" "pixel_3/CSA_VREF" 28.3784
+cap "pixel_3/ROW_SEL" "pixel_3/gring" -19.6
+cap "pixel_2/test" "pixel_3/CSA_VREF" 14.795
+cap "pixel_3/AMP_IN" "pixel_2/net1" 5.07692
+cap "pixel_2/VREF" "pixel_3/PIX_OUT" 31.4815
+cap "pixel_3/AMP_IN" "pixel_2/test" 53.3077
+cap "pixel_5/net1" "pixel_2/AMP_IN" 5.07692
+cap "pixel_2/ROW_SEL" "pixel_2/gring" -19.6
+cap "pixel_5/VREF" "pixel_2/PIX_OUT" 31.4815
+cap "pixel_5/CSA_VREF" "pixel_5/test" 14.795
+cap "pixel_2/VDD" "pixel_2/gring" 3.55271e-15
+cap "pixel_5/test" "pixel_2/AMP_IN" 53.3077
+cap "pixel_5/CSA_VREF" "pixel_5/VREF" 28.3784
+cap "SF_IB" "VDD" -83
+cap "SF_IB" "pixel_3/test" -170
+cap "SF_IB" "pixel_3/VDD" -82
+cap "NB1" "pixel_3/gring" -33.6
+cap "CSA_VREF" "SF_IB" -48.1091
+cap "SF_IB" "NB1" 217.721
+cap "pixel_3/VBIAS" "pixel_3/VREF" 1.42109e-14
+cap "pixel_3/gring" "SF_IB" 89.9
+cap "pixel_3/VREF" "SF_IB" 11.81
+cap "pixel_3/a_4350_10#" "pixel_7/GND" 11.7333
+cap "NB1" "pixel_7/GND" 2.7
+cap "CSA_VREF" "pixel_3/test" 8.3
+cap "pixel_3/test" "NB1" 40.474
+cap "CSA_VREF" "VDD" 6.68
+cap "VDD" "NB1" 34.6154
+cap "pixel_3/gring" "VDD" 46.455
+cap "pixel_3/net1" "CSA_VREF" 3
+cap "pixel_3/test" "SF_IB" 11.5
+cap "pixel_3/gring" "pixel_3/NB2" -12.8
+cap "VDD" "SF_IB" 9.175
+cap "pixel_3/a_4350_10#" "NB1" 35.7446
+cap "pixel_3/gring" "CSA_VREF" 54.6
+cap "CSA_VREF" "pixel_3/VREF" 11.81
+cap "VDD" "pixel_7/GND" 900
+cap "pixel_3/gring" "NB1" 69.7
+cap "pixel_3/gring" "pixel_3/VREF" -11.97
+cap "CSA_VREF" "pixel_3/AMP_IN" 5.68434e-14
+cap "pixel_3/VBIAS" "CSA_VREF" 12.26
+cap "pixel_3/VBIAS" "pixel_3/gring" -11.2
+cap "pixel_3/SF_IB" "pixel_7/gring" 112
+cap "pixel_7/gring" "pixel_3/VDD" 96
+cap "pixel_7/shield" "pixel_7/gring" 96
+cap "pixel_7/NB1" "pixel_7/gring" 112
+cap "pixel_7/NB1" "pixel_3/SF_IB" 259.412
+cap "pixel_7/shield" "pixel_3/VDD" 1050
+cap "pixel_3/VDD" "pixel_3/CSA_VREF" -2.7
+cap "pixel_7/NB1" "pixel_2/a_4350_10#" 35.7446
+cap "pixel_2/VBIAS" "pixel_2/VREF" 1.42109e-14
+cap "pixel_7/NB1" "pixel_3/VDD" 34.6154
+cap "pixel_2/VBIAS" "pixel_7/gring" -11.2
+cap "pixel_2/AMP_IN" "pixel_3/CSA_VREF" 2.84217e-14
+cap "pixel_3/SF_IB" "pixel_3/VDD" -2.7
+cap "pixel_2/VREF" "pixel_3/CSA_VREF" 20.2703
+cap "pixel_2/test" "pixel_3/AMP_IN" 16.2462
+cap "pixel_3/VDD" "pixel_7/gring" -128.275
+cap "pixel_7/gring" "pixel_3/CSA_VREF" -79.1
+cap "pixel_7/GND" "pixel_2/a_4350_10#" 11.7333
+cap "pixel_3/SF_IB" "pixel_7/NB1" 260.787
+cap "pixel_7/GND" "pixel_3/VDD" 1050
+cap "pixel_7/NB1" "pixel_7/gring" -19.6
+cap "pixel_3/SF_IB" "pixel_2/VREF" 187.5
+cap "pixel_2/test" "pixel_3/VDD" 34.0312
+cap "pixel_2/VREF" "pixel_7/gring" -11.2
+cap "pixel_7/NB1" "pixel_7/PIX_OUT" -2.84217e-14
+cap "pixel_3/SF_IB" "pixel_7/gring" -19.6
+cap "pixel_3/AMP_IN" "pixel_3/VDD" 3.55271e-15
+cap "pixel_7/NB1" "pixel_2/test" 40.474
+cap "pixel_7/PIX_OUT" "pixel_7/gring" -232
+cap "pixel_7/GND" "pixel_7/gring" -238.55
+cap "pixel_3/VDD" "pixel_2/a_4350_10#" -1.7
+cap "pixel_3/SF_IB" "pixel_2/test" 17.7658
+cap "pixel_2/NB2" "pixel_2/gring" -12.8
+cap "pixel_6/shield" "pixel_2/VDD" 1050
+cap "pixel_2/SF_IB" "pixel_6/NB1" 259.412
+cap "pixel_2/SF_IB" "pixel_6/gring" -19.6
+cap "pixel_6/PIX_OUT" "pixel_6/NB1" -2.84217e-14
+cap "pixel_5/VBIAS" "pixel_5/VREF" 1.42109e-14
+cap "pixel_5/test" "pixel_2/SF_IB" 17.7658
+cap "pixel_5/CSA_VREF" "pixel_6/gring" -79.1
+cap "pixel_6/NB1" "pixel_6/gring" -19.6
+cap "pixel_5/a_4350_10#" "pixel_8/GND" 11.7333
+cap "pixel_5/CSA_VREF" "pixel_2/SF_IB" -2.84217e-14
+cap "pixel_6/NB1" "pixel_2/SF_IB" 259.861
+cap "pixel_5/VDD" "pixel_6/gring" -128.275
+cap "pixel_5/VDD" "pixel_2/SF_IB" 3.41061e-13
+cap "pixel_5/VBIAS" "pixel_6/gring" -11.2
+cap "pixel_5/test" "pixel_5/CSA_VREF" -1.35
+cap "pixel_5/test" "pixel_6/NB1" 40.474
+cap "pixel_5/test" "pixel_5/VDD" 34.0312
+cap "pixel_5/CSA_VREF" "pixel_5/VDD" 5.68434e-14
+cap "pixel_6/NB1" "pixel_5/VDD" 17.3077
+cap "pixel_5/VDD" "pixel_2/test_net" 5.68434e-14
+cap "pixel_8/GND" "pixel_6/gring" -238.55
+cap "pixel_5/VREF" "pixel_6/gring" -11.2
+cap "pixel_6/PIX_OUT" "pixel_6/gring" -232
+cap "pixel_5/VREF" "pixel_2/SF_IB" 187.5
+cap "pixel_5/test" "pixel_2/AMP_IN" 16.2462
+cap "pixel_5/a_4350_10#" "pixel_6/NB1" 35.7446
+cap "pixel_5/a_4350_10#" "pixel_5/VDD" -18.7
+cap "pixel_5/CSA_VREF" "pixel_5/VREF" 20.2703
+cap "pixel_2/AMP_IN" "pixel_5/VDD" 3.55271e-15
+cap "pixel_8/GND" "pixel_5/VDD" 1050
+cap "pixel_5/VDD" "pixel_8/shield" 1050
+cap "pixel_8/NB1" "pixel_5/SF_IB" 260.338
+cap "pixel_5/NB2" "pixel_5/gring" -12.8
+cap "pixel_8/NB1" "pixel_5/VDD" 17.3077
+cap "GND" "pixel_8/gring" 47.85
+cap "GND" "pixel_5/VDD" 600
+cap "GND" "pixel_8/NB1" 5.5
+cap "pixel_8/PIX_OUT" "pixel_8/gring" -232
+cap "pixel_8/NB1" "pixel_5/SF_IB" 148.684
+cap "pixel_7/gring" "ROW_SEL0" -36
+cap "pixel_7/VREF" "ROW_SEL0" 7.03125
+cap "PIX0_IN" "ROW_SEL0" 0.18
+cap "pixel_7/a_3860_n750#" "ROW_SEL0" 0.3
+cap "pixel_7/VREF" "ROW_SEL0" 19.0212
+cap "ROW_SEL0" "pixel_7/gring" 117.45
+cap "pixel_7/GND" "pixel_7/gring" -3.948
+cap "pixel_7/a_4050_n2590#" "ROW_SEL0" 3.75
+cap "pixel_7/VREF" "pixel_7/gring" -0.385
+cap "pixel_7/a_4120_n750#" "ROW_SEL0" 0.3
+cap "pixel_7/GND" "ROW_SEL0" -5.68434e-14
+cap "pixel_7/GND" "ROW_SEL0" 0.312
+cap "pixel_7/ROW_SEL" "pixel_7/gring" 168
+cap "pixel_7/AMP_IN" "pixel_6/net1" 0.846154
+cap "pixel_6/VREF" "pixel_7/PIX_OUT" 31.4815
+cap "pixel_7/ROW_SEL" "pixel_7/gring" -19.6
+cap "pixel_7/AMP_IN" "pixel_6/test" 2.53846
+cap "pixel_6/VREF" "pixel_7/CSA_VREF" 1.35135
+cap "pixel_6/AMP_IN" "pixel_8/net1" 0.846154
+cap "pixel_8/VREF" "pixel_8/CSA_VREF" 1.35135
+cap "pixel_6/ROW_SEL" "pixel_6/gring" -19.6
+cap "pixel_8/VREF" "pixel_6/PIX_OUT" 31.4815
+cap "pixel_6/AMP_IN" "pixel_8/test" 2.53846
+cap "SF_IB" "VDD" -83
+cap "SF_IB" "pixel_7/test" -170
+cap "SF_IB" "pixel_7/VDD" -82
+cap "GRING" "VDD" 43
+cap "SF_IB" "GRING" 24.3
+cap "VREF" "CSA_VREF" 11.81
+cap "VDD" "GRING" -148.8
+cap "CSA_VREF" "pixel_7/test" 8.3
+cap "VREF" "GRING" 38.41
+cap "pixel_7/net1" "CSA_VREF" 3
+cap "CSA_VREF" "GRING" 54.6
+cap "SF_IB" "VDD" 9.175
+cap "CSA_VREF" "pixel_7/AMP_IN" 5.68434e-14
+cap "NB2" "GRING" 39.18
+cap "VREF" "SF_IB" 11.81
+cap "SF_IB" "pixel_7/test" 11.5
+cap "VREF" "VDD" 137.368
+cap "VBIAS" "CSA_VREF" 12.26
+cap "SF_IB" "CSA_VREF" -48.1091
+cap "VBIAS" "GRING" 39.18
+cap "CSA_VREF" "VDD" 6.68
+cap "pixel_7/VDD" "VREF" 165.789
+cap "pixel_7/VDD" "pixel_7/gring" 96
+cap "pixel_7/gring" "pixel_7/SF_IB" 112
+cap "pixel_7/SF_IB" "pixel_7/gring" -19.6
+cap "pixel_7/gring" "pixel_7/CSA_VREF" -79.1
+cap "VREF" "pixel_7/gring" 39.18
+cap "pixel_7/AMP_IN" "pixel_6/test" 67.0154
+cap "pixel_7/SF_IB" "pixel_7/VDD" -2.7
+cap "pixel_7/VDD" "pixel_7/CSA_VREF" -2.7
+cap "VREF" "pixel_7/VDD" 165.789
+cap "VBIAS" "pixel_7/gring" 39.18
+cap "pixel_7/SF_IB" "pixel_7/CSA_VREF" -2.84217e-14
+cap "pixel_7/SF_IB" "VREF" 187.5
+cap "VREF" "pixel_7/CSA_VREF" 47.2973
+cap "pixel_7/VDD" "pixel_6/a_4350_10#" -1.7
+cap "pixel_6/AMP_IN" "pixel_7/CSA_VREF" 2.84217e-14
+cap "pixel_7/VDD" "pixel_7/PIX_OUT" -2.84217e-14
+cap "pixel_7/VDD" "pixel_6/test" 34.0312
+cap "pixel_7/SF_IB" "pixel_6/test" 17.7658
+cap "pixel_6/test" "pixel_7/CSA_VREF" 14.795
+cap "pixel_7/AMP_IN" "pixel_7/VDD" 3.55271e-15
+cap "VBIAS" "pixel_7/PIX_OUT" 25.7692
+cap "pixel_6/net1" "pixel_7/AMP_IN" 4.23077
+cap "pixel_7/gring" "pixel_7/VDD" -128.275
+cap "VREF" "pixel_6/VDD" 165.789
+cap "pixel_6/gring" "NB2" 39.18
+cap "VREF" "pixel_8/VDD" 165.789
+cap "pixel_6/SF_IB" "pixel_8/CSA_VREF" -2.84217e-14
+cap "pixel_6/gring" "VBIAS" 39.18
+cap "pixel_6/PIX_OUT" "pixel_8/VDD" -2.84217e-14
+cap "pixel_8/CSA_VREF" "pixel_8/test" 13.445
+cap "pixel_8/CSA_VREF" "pixel_8/VDD" 5.68434e-14
+cap "pixel_8/VDD" "pixel_8/a_4350_10#" -18.7
+cap "pixel_6/gring" "pixel_6/SF_IB" -19.6
+cap "VREF" "pixel_8/CSA_VREF" 47.2973
+cap "pixel_6/AMP_IN" "pixel_8/test" 67.0154
+cap "pixel_6/AMP_IN" "pixel_8/VDD" 3.55271e-15
+cap "pixel_6/gring" "pixel_8/VDD" -128.275
+cap "pixel_6/AMP_IN" "pixel_8/net1" 4.23077
+cap "pixel_6/SF_IB" "pixel_8/test" 17.7658
+cap "pixel_6/SF_IB" "pixel_8/VDD" 3.41061e-13
+cap "pixel_6/PIX_OUT" "VBIAS" 25.7692
+cap "pixel_6/gring" "VREF" 39.18
+cap "pixel_8/VDD" "pixel_6/test_net" 5.68434e-14
+cap "pixel_6/SF_IB" "VREF" 187.5
+cap "pixel_8/VDD" "pixel_8/test" 34.0312
+cap "pixel_6/gring" "pixel_8/CSA_VREF" -79.1
+cap "NB2" "pixel_8/gring" 39.18
+cap "VREF" "pixel_8/VDD" 142.105
+merge "pixel_6/NB1" "pixel_8/NB1" -284.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117960 -1500 0 0 0 0 0 0
+merge "pixel_8/NB1" "pixel_7/NB1"
+merge "pixel_7/NB1" "pixel_2/NB1"
+merge "pixel_2/NB1" "pixel_5/NB1"
+merge "pixel_5/NB1" "pixel_3/NB1"
+merge "pixel_3/NB1" "pixel_0/NB1"
+merge "pixel_0/NB1" "pixel_4/NB1"
+merge "pixel_4/NB1" "pixel_1/NB1"
+merge "pixel_1/NB1" "NB1"
+merge "pixel_8/GND" "pixel_6/GND" -4264.38 -913470 -7857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1094650 -17331 0 0 0 0 0 0 0 0 0 0
+merge "pixel_6/GND" "pixel_7/shield"
+merge "pixel_7/shield" "pixel_7/GND"
+merge "pixel_7/GND" "pixel_5/GND"
+merge "pixel_5/GND" "pixel_3/shield"
+merge "pixel_3/shield" "pixel_2/GND"
+merge "pixel_2/GND" "pixel_3/GND"
+merge "pixel_3/GND" "pixel_1/shield"
+merge "pixel_1/shield" "pixel_4/GND"
+merge "pixel_4/GND" "GND"
+merge "GND" "pixel_0/GND"
+merge "pixel_0/GND" "pixel_1/GND"
+merge "pixel_1/GND" "m1_2860_n5910#"
+merge "m1_2860_n5910#" "w_514_n6906#"
+merge "pixel_6/SF_IB" "pixel_8/SF_IB" -46.506 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1619020 -2460 0 0 0 0 0 0
+merge "pixel_8/SF_IB" "pixel_7/SF_IB"
+merge "pixel_7/SF_IB" "pixel_2/SF_IB"
+merge "pixel_2/SF_IB" "pixel_5/SF_IB"
+merge "pixel_5/SF_IB" "pixel_3/SF_IB"
+merge "pixel_3/SF_IB" "pixel_0/SF_IB"
+merge "pixel_0/SF_IB" "pixel_4/SF_IB"
+merge "pixel_4/SF_IB" "pixel_1/SF_IB"
+merge "pixel_1/SF_IB" "SF_IB"
+merge "pixel_4/NB2" "pixel_8/NB2" -366.013 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43090 -1830 0 0 0 0 0 0 0 0
+merge "pixel_8/NB2" "pixel_5/NB2"
+merge "pixel_5/NB2" "pixel_0/NB2"
+merge "pixel_0/NB2" "pixel_6/NB2"
+merge "pixel_6/NB2" "pixel_2/NB2"
+merge "pixel_2/NB2" "pixel_1/NB2"
+merge "pixel_1/NB2" "NB2"
+merge "NB2" "pixel_7/NB2"
+merge "pixel_7/NB2" "pixel_3/NB2"
+merge "pixel_6/ROW_SEL" "pixel_8/ROW_SEL" -265.312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 -1300 0 0 0 0 0 0
+merge "pixel_8/ROW_SEL" "pixel_7/ROW_SEL"
+merge "pixel_7/ROW_SEL" "ROW_SEL0"
+merge "pixel_8/AMP_IN" "PIX2_IN" -156.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -800 0 0
+merge "pixel_6/VDD" "pixel_8/VDD" 1293.48 0 0 0 0 784000 -7840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1460072 -2940 0 0 0 0 0 0 0 0 0 0
+merge "pixel_8/VDD" "pixel_7/VDD"
+merge "pixel_7/VDD" "pixel_2/VDD"
+merge "pixel_2/VDD" "pixel_5/VDD"
+merge "pixel_5/VDD" "pixel_3/VDD"
+merge "pixel_3/VDD" "pixel_0/VDD"
+merge "pixel_0/VDD" "pixel_4/VDD"
+merge "pixel_4/VDD" "pixel_1/VDD"
+merge "pixel_1/VDD" "VDD"
+merge "pixel_5/AMP_IN" "PIX5_IN" -155.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 -800 0 0
+merge "pixel_2/ROW_SEL" "pixel_5/ROW_SEL" -265.312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 -1300 0 0 0 0 0 0
+merge "pixel_5/ROW_SEL" "pixel_3/ROW_SEL"
+merge "pixel_3/ROW_SEL" "ROW_SEL1"
+merge "pixel_4/AMP_IN" "PIX8_IN" -154.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 -800 0 0
+merge "pixel_4/PIX_OUT" "pixel_8/PIX_OUT" -2000.93 0 0 0 0 0 0 0 0 206287 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154793 0 108562 -1740 185704 -3460 320816 -3460 -15232 -5960 0 0 0 0
+merge "pixel_8/PIX_OUT" "pixel_5/PIX_OUT"
+merge "pixel_5/PIX_OUT" "PIX_OUT2"
+merge "pixel_6/gring" "GRING" -11725.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6118400 -67600 0 0
+merge "GRING" "pixel_8/gring"
+merge "pixel_8/gring" "pixel_2/gring"
+merge "pixel_2/gring" "pixel_7/gring"
+merge "pixel_7/gring" "pixel_5/gring"
+merge "pixel_5/gring" "pixel_0/gring"
+merge "pixel_0/gring" "pixel_3/gring"
+merge "pixel_3/gring" "pixel_4/gring"
+merge "pixel_4/gring" "pixel_1/gring"
+merge "pixel_6/CSA_VREF" "pixel_8/CSA_VREF" -2180.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2071240 -7380 0 0 0 0 0 0
+merge "pixel_8/CSA_VREF" "pixel_7/CSA_VREF"
+merge "pixel_7/CSA_VREF" "pixel_2/CSA_VREF"
+merge "pixel_2/CSA_VREF" "pixel_5/CSA_VREF"
+merge "pixel_5/CSA_VREF" "pixel_3/CSA_VREF"
+merge "pixel_3/CSA_VREF" "pixel_0/CSA_VREF"
+merge "pixel_0/CSA_VREF" "pixel_4/CSA_VREF"
+merge "pixel_4/CSA_VREF" "pixel_1/CSA_VREF"
+merge "pixel_1/CSA_VREF" "CSA_VREF"
+merge "pixel_1/PIX_OUT" "pixel_7/PIX_OUT" -995.895 0 0 0 0 0 0 0 0 -67968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126773 0 68803 -730 136008 -1460 123600 -1460 -39600 -3960 0 0 0 0
+merge "pixel_7/PIX_OUT" "pixel_3/PIX_OUT"
+merge "pixel_3/PIX_OUT" "PIX_OUT0"
+merge "pixel_4/VBIAS" "pixel_8/VBIAS" -2594.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23160 -1150 -4303 -450 50479 -12611 0 0 0 0
+merge "pixel_8/VBIAS" "pixel_5/VBIAS"
+merge "pixel_5/VBIAS" "pixel_0/VBIAS"
+merge "pixel_0/VBIAS" "pixel_6/VBIAS"
+merge "pixel_6/VBIAS" "pixel_2/VBIAS"
+merge "pixel_2/VBIAS" "pixel_1/VBIAS"
+merge "pixel_1/VBIAS" "VBIAS"
+merge "VBIAS" "pixel_7/VBIAS"
+merge "pixel_7/VBIAS" "pixel_3/VBIAS"
+merge "pixel_0/AMP_IN" "PIX7_IN" -160.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32000 -800 0 0
+merge "pixel_4/VREF" "pixel_8/VREF" -318.923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2431620 -8110 -150650 -910 0 0 0 0 0 0 0 0
+merge "pixel_8/VREF" "pixel_5/VREF"
+merge "pixel_5/VREF" "pixel_0/VREF"
+merge "pixel_0/VREF" "pixel_6/VREF"
+merge "pixel_6/VREF" "pixel_2/VREF"
+merge "pixel_2/VREF" "pixel_1/VREF"
+merge "pixel_1/VREF" "VREF"
+merge "VREF" "pixel_7/VREF"
+merge "pixel_7/VREF" "pixel_3/VREF"
+merge "pixel_6/AMP_IN" "PIX1_IN" -155.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 -800 0 0
+merge "pixel_1/AMP_IN" "PIX6_IN" -162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0
+merge "pixel_7/AMP_IN" "PIX0_IN" -154.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 -800 0 0
+merge "pixel_3/AMP_IN" "PIX3_IN" -160.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32000 -800 0 0
+merge "pixel_0/PIX_OUT" "pixel_6/PIX_OUT" -875.9 0 0 0 0 0 0 0 0 -141584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -219763 0 54837 -530 191816 -1060 199600 -1060 118000 -3560 0 0 0 0
+merge "pixel_6/PIX_OUT" "pixel_2/PIX_OUT"
+merge "pixel_2/PIX_OUT" "PIX_OUT1"
+merge "pixel_2/AMP_IN" "PIX4_IN" -159.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25600 -800 0 0
+merge "pixel_0/ROW_SEL" "pixel_4/ROW_SEL" -753.868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1617320 -1300 0 0 0 0 0 0
+merge "pixel_4/ROW_SEL" "pixel_1/ROW_SEL"
+merge "pixel_1/ROW_SEL" "ROW_SEL2"
