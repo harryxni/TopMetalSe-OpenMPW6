@@ -7,6 +7,9 @@
 
 ## A Low Noise Charge Sensing Pixelated CMOS Detector for the Selena Neutrino Experiment
 
+**TO WRITE/DETERMINE**
+Pixel Array Size
+Other test structure
 Overview
 =================
 
@@ -19,16 +22,17 @@ For the final design, the TopMetalSe will require an opening in the passivation 
 Details and Simulation
 =================
 **Pixel Geometry**
-![pixel_geometry](https://user-images.githubusercontent.com/47924327/172535169-f2c59109-5b95-434f-8d99-77ab16f409d0.png)
+![pixel_geometry](docs/images/pixel_geometry.png)
 
 The Pixel Geometry is shown here. To meet DRC requirements, the gring is 1.6µm thick, shared between pixels (effective 0.8µm thick gring per pixel). In addition, the spacing between the gring and input electrode is 1.6µm. Parasitic extraction from Magic gives the capcitance between the gring and electrode as 3.1 femtofarads.
 
 **Sensor Structure**
-![pixel](https://user-images.githubusercontent.com/47924327/172540583-224cc7d1-e437-48fe-b046-d3754bd299ac.png)
+![pixel](docs/images/pixel.png)
 
 The core of each pixel is the charge sensitive amplifier, schematic shown above. It is formed using a dual-input cascode amplifier, a source-follower output stage and a feedback loop with a MiM capacitor and a transistor acting as a resistor. The gate-source voltage of the feedback resistor is determined by the difference between CSA_VREF and VREF and controls the decay constant of the CSA. Following the output of the CSA, there is two source follower stages, followed by a row selection transistor.
 
 During readout, a digital scanning module controls the ROW_SEL port to select out a single row of pixels. Exterior the pixel array is series of COL_SEL transistors, which will allow us to fully multiplex the pixel outputs onto a single readout line. The output of the array is fed to an output buffer stage, formed from a previously submitted [open-source OpAmp](https://github.com/diegohernando/caravel_fulgor_opamp). 
 
 We simulate a simple 3x3 pixel array, with the output of the chip shown below at a clock frequency of 1kHz. The positive pulses show the pixel switching, with the higher pulses being the column switching. At 65 milliseconds, we inject a a 6242 electron signal (100 pA for 10 microseconds) onto pixel 6.
-![sim_output](https://user-images.githubusercontent.com/47924327/172539592-b9d15169-7741-4b30-8cc6-668b7d3bcaa9.png)
+
+![sim_output](docs/images/sim_output.png)
