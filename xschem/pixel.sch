@@ -86,7 +86,7 @@ C {devices/ipin.sym} -440 140 3 0 {name=hold_n2 lab=IN
 }
 C {devices/capa.sym} -520 10 3 0 {name=C1
 m=1
-value=2f
+value=3f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/ipin.sym} -590 10 0 0 {name=hold_n11 lab=GRING

@@ -253,3 +253,5 @@ C {devices/lab_pin.sym} 3860 -110 0 0 {name=l29 sig_type=std_logic lab=io_analog
 C {devices/lab_pin.sym} 4420 -650 2 0 {name=l32 sig_type=std_logic lab=io_analog[7]}
 C {devices/lab_pin.sym} 4430 10 0 0 {name=l9 sig_type=std_logic lab=io_analog[5]}
 C {devices/lab_pin.sym} 5020 -60 2 0 {name=l31 sig_type=std_logic lab=io_analog[4]}
+C {devices/isource.sym} 3830 -240 3 0 {name=I0 value="PULSE(0 100p 60m 0.01m 0.01m 10u)"}
+C {devices/gnd.sym} 3800 -240 1 0 {name=l34 lab=GND}
