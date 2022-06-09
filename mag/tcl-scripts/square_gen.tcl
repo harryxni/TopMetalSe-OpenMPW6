@@ -1,5 +1,5 @@
 grid 1um 1um
-tech unlock glass
+#tech unlock glass
 proc gen_square {l origin_x origin_y {layer m5}} {
 	set sin60 0.866 
 	set cos60 0.5
@@ -35,7 +35,7 @@ proc square_shell {l w origin_x origin_y} {
 	select
 	erase via4
 }
-set pix_side_length 15 
+set pix_side_length 15*3+40
 set gring_width 1.6
 
 set e_to_gring_length 3.2

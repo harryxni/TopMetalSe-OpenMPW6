@@ -1,0 +1,53 @@
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VXTF3X in circuit opampjulia.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PGN2UQ in circuit opampjulia.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VXT95W in circuit opampjulia.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XGTW7K in circuit opampjulia.spice (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_X8JY7K in circuit opampjulia.spice (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_BLS9H9 in circuit opampjulia.spice (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VXTQ3X in circuit opampjulia.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_JXF9S2 in circuit opampjulia.spice (0)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class opampjulia.spice:  Merged 758 devices.
+
+Subcircuit summary:
+Circuit 1: opampjulia.spice                |Circuit 2: /home/fsolis/caravel_fulgor_opa 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (5)                
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12 **Mismatch**            |Number of nets: 10 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: opampjulia.spice                |Circuit 2: /home/fsolis/caravel_fulgor_opa 
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: vss                                   
+  sky130_fd_pr__nfet_01v8/4 = 4            |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 4            
+                                           |                                           
+Net: vp                                    |Net: vout                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: vout                                  |Net: net1                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: vss                                   |Net: vp                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+                                           |                                           
+Net: m3_67376_n80074#                      |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: w_56156_n88602#                       |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/4 = 2            |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+The top level cell failed pin matching.

@@ -90,3 +90,5 @@ catch {magic::query_my_projects}
 snap user
 ext2spice scale off
 ext2spice hierarchy on
+
+add fulgor/fulgor_opamp

@@ -1,0 +1,69 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1608354825
+<< nwell >>
+rect 457 679 1048 1458
+<< psubdiff >>
+rect 510 195 986 265
+rect 510 70 539 195
+rect 951 70 986 195
+rect 510 64 986 70
+<< nsubdiff >>
+rect 550 1184 959 1363
+<< psubdiffcont >>
+rect 539 70 951 195
+<< viali >>
+rect 550 1184 959 1363
+rect 510 195 986 265
+rect 510 70 539 195
+rect 539 70 951 195
+rect 951 70 986 195
+rect 510 64 986 70
+<< metal1 >>
+rect 538 1363 971 1369
+rect 538 1184 550 1363
+rect 959 1184 971 1363
+rect 538 1178 971 1184
+rect 688 909 736 1178
+rect 774 906 784 1089
+rect 845 906 855 1089
+rect 727 698 790 869
+rect 456 635 790 698
+rect 988 635 998 687
+rect 1050 635 1060 687
+rect 727 458 790 635
+rect 684 271 732 426
+rect 768 332 778 426
+rect 846 332 856 426
+rect 498 265 998 271
+rect 498 64 510 265
+rect 986 64 998 265
+rect 498 58 998 64
+<< via1 >>
+rect 784 906 845 1089
+rect 998 635 1050 687
+rect 778 332 846 426
+<< metal2 >>
+rect 784 1089 845 1099
+rect 784 896 845 906
+rect 790 687 842 896
+rect 998 687 1050 697
+rect 790 635 998 687
+rect 790 436 842 635
+rect 998 625 1050 635
+rect 778 426 846 436
+rect 778 322 846 332
+use sky130_fd_pr__nfet_01v8_ETUE4C  sky130_fd_pr__nfet_01v8_ETUE4C_0
+timestamp 1608331766
+transform 1 0 756 0 1 412
+box -211 -224 211 224
+use sky130_fd_pr__pfet_01v8_B5M7SB  sky130_fd_pr__pfet_01v8_B5M7SB_0
+timestamp 1608331766
+transform 1 0 756 0 1 955
+box -211 -274 211 274
+<< labels >>
+rlabel metal1 456 635 790 698 1 in
+rlabel via1 998 635 1050 687 1 out
+rlabel viali 550 1184 959 1363 1 vdd
+<< end >>

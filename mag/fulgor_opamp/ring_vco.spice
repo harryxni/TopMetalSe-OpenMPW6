@@ -1,0 +1,122 @@
+* NGSPICE file created from ring_vco.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_5UMBUD VSUBS a_n73_n150# w_n211_n298# a_n15_n176#
++ a_15_n150#
+X0 a_15_n150# a_n15_n176# a_n73_n150# w_n211_n298# sky130_fd_pr__pfet_01v8 w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_YK3456 VSUBS w_n211_n300# a_n33_112# a_n73_n90# a_15_n90#
+X0 a_15_n90# a_n33_112# a_n73_n90# VSUBS sky130_fd_pr__nfet_01v8 w=900000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PUCP6T VSUBS a_n73_n45# a_n15_n71# a_15_n45# w_n211_n255#
+X0 a_15_n45# a_n15_n71# a_n73_n45# VSUBS sky130_fd_pr__nfet_01v8 w=450000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_35M7SK VSUBS w_n211_n128# a_n73_n90# a_n15_n126# a_15_n90#
+X0 a_15_n90# a_n15_n126# a_n73_n90# w_n211_n128# sky130_fd_pr__pfet_01v8 w=900000u l=150000u
+.ends
+
+.subckt inverter VSUBS m1_n5252_228# m1_n5006_373# m1_n5252_944# w_n5252_188# m1_n5132_408#
++ w_n5252_694# a_n5180_576#
+Xinv_nfet VSUBS m1_n5132_408# a_n5180_576# m1_n5006_373# VSUBS sky130_fd_pr__nfet_01v8_PUCP6T
+Xsky130_fd_pr__pfet_01v8_35M7SK_0 VSUBS w_n5252_694# m1_n5252_944# a_n5180_576# m1_n5006_373#
++ sky130_fd_pr__pfet_01v8_35M7SK
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_X8MMG7 VSUBS a_15_n181# a_n33_141# a_n73_n181# w_n211_n329#
+X0 a_15_n181# a_n33_141# a_n73_n181# VSUBS sky130_fd_pr__nfet_01v8 w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_8GKXY7 VSUBS a_n73_n60# a_n15_n86# a_15_n60# w_n211_n208#
+X0 a_15_n60# a_n15_n86# a_n73_n60# VSUBS sky130_fd_pr__nfet_01v8 w=600000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_TFZGL8 VSUBS a_n81_n133# w_n263_n255# a_15_67# a_n125_n45#
++ a_63_n45#
+X0 a_63_n45# a_15_67# a_n33_n45# VSUBS sky130_fd_pr__nfet_01v8 w=450000u l=150000u
+X1 a_n33_n45# a_n81_n133# a_n125_n45# VSUBS sky130_fd_pr__nfet_01v8 w=450000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_H49BFK VSUBS a_n125_n90# a_63_n90# a_n33_n90# a_n81_n187#
++ w_n263_n309# a_15_121#
+X0 a_n33_n90# a_n81_n187# a_n125_n90# w_n263_n309# sky130_fd_pr__pfet_01v8 w=900000u l=150000u
+X1 a_63_n90# a_15_121# a_n33_n90# w_n263_n309# sky130_fd_pr__pfet_01v8 w=900000u l=150000u
+.ends
+
+.subckt nand out bulk_n m1_n267_n447# vdd A B
+Xsky130_fd_pr__nfet_01v8_TFZGL8_0 bulk_n B bulk_n A m1_n267_n447# out sky130_fd_pr__nfet_01v8_TFZGL8
+Xsky130_fd_pr__pfet_01v8_H49BFK_0 bulk_n out out vdd B vdd A sky130_fd_pr__pfet_01v8_H49BFK
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_5U9U2E VSUBS a_n125_n150# a_33_n176# w_n263_n369#
++ a_n33_n150# a_n63_n176# a_63_n150#
+X0 a_63_n150# a_33_n176# a_n33_n150# w_n263_n369# sky130_fd_pr__pfet_01v8 w=1.5e+06u l=150000u
+X1 a_n33_n150# a_n63_n176# a_n125_n150# w_n263_n369# sky130_fd_pr__pfet_01v8 w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_35M7SP VSUBS a_n73_n90# a_n33_121# a_15_n90# w_n211_n309#
+X0 a_15_n90# a_n33_121# a_n73_n90# w_n211_n309# sky130_fd_pr__pfet_01v8 w=900000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_JRPBUD VSUBS a_15_n186# w_n211_n334# a_n33_145# a_n73_n186#
+X0 a_15_n186# a_n33_145# a_n73_n186# w_n211_n334# sky130_fd_pr__pfet_01v8 w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_R7545W VSUBS w_n211_n330# a_15_n120# a_n73_n120# a_n15_n207#
+X0 a_15_n120# a_n15_n207# a_n73_n120# VSUBS sky130_fd_pr__nfet_01v8 w=1.2e+06u l=150000u
+.ends
+
+
+* Top level circuit ring_vco
+
+Xsky130_fd_pr__pfet_01v8_5UMBUD_0 vss vdd vdd a_6167_3877# out_vco sky130_fd_pr__pfet_01v8_5UMBUD
+Xsky130_fd_pr__nfet_01v8_YK3456_0 vss vss in 5 vss sky130_fd_pr__nfet_01v8_YK3456
+Xinverter_1[0] vss vss inverter_1[1]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ a_6167_3877# inverter
+Xinverter_1[1] vss vss inverter_1[2]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[1]/a_n5180_576# inverter
+Xinverter_1[2] vss vss inverter_1[3]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[2]/a_n5180_576# inverter
+Xinverter_1[3] vss vss inverter_1[4]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[3]/a_n5180_576# inverter
+Xinverter_1[4] vss vss inverter_1[5]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[4]/a_n5180_576# inverter
+Xinverter_1[5] vss vss inverter_1[6]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[5]/a_n5180_576# inverter
+Xinverter_1[6] vss vss inverter_1[7]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[6]/a_n5180_576# inverter
+Xinverter_1[7] vss vss inverter_1[8]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[7]/a_n5180_576# inverter
+Xinverter_1[8] vss vss inverter_1[9]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[8]/a_n5180_576# inverter
+Xinverter_1[9] vss vss inverter_1[9]/m1_n5006_373# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[9]/a_n5180_576# inverter
+Xinverter_1[10] vss vss inverter_1[11]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[9]/m1_n5006_373# inverter
+Xinverter_1[11] vss vss inverter_1[12]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[11]/a_n5180_576# inverter
+Xinverter_1[12] vss vss inverter_1[13]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[12]/a_n5180_576# inverter
+Xinverter_1[13] vss vss inverter_1[14]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[13]/a_n5180_576# inverter
+Xinverter_1[14] vss vss inverter_1[15]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[14]/a_n5180_576# inverter
+Xinverter_1[15] vss vss inverter_1[16]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[15]/a_n5180_576# inverter
+Xinverter_1[16] vss vss inverter_1[17]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[16]/a_n5180_576# inverter
+Xinverter_1[17] vss vss inverter_1[18]/a_n5180_576# nand_0/vdd vss m1_n47_2959# nand_0/vdd
++ inverter_1[17]/a_n5180_576# inverter
+Xinverter_1[18] vss vss nand_0/A nand_0/vdd vss m1_n47_2959# nand_0/vdd inverter_1[18]/a_n5180_576#
++ inverter
+Xsky130_fd_pr__nfet_01v8_X8MMG7_0 vss vss in m1_n47_2959# vss sky130_fd_pr__nfet_01v8_X8MMG7
+Xsky130_fd_pr__nfet_01v8_8GKXY7_0 vss vss a_6167_3877# out_vco vss sky130_fd_pr__nfet_01v8_8GKXY7
+Xnand_0 nand_0/out vss m1_n47_2959# nand_0/vdd nand_0/A en nand
+Xsky130_fd_pr__pfet_01v8_5U9U2E_0 vss a_6167_3877# nand_0/out nand_0/vdd nand_0/vdd
++ nand_0/out a_6167_3877# sky130_fd_pr__pfet_01v8_5U9U2E
+Xsky130_fd_pr__pfet_01v8_35M7SP_0 vss vdd 5 5 vdd sky130_fd_pr__pfet_01v8_35M7SP
+Xsky130_fd_pr__pfet_01v8_JRPBUD_0 vss nand_0/vdd vdd 5 vdd sky130_fd_pr__pfet_01v8_JRPBUD
+Xsky130_fd_pr__nfet_01v8_R7545W_0 vss vss a_6167_3877# m1_n47_2959# nand_0/out sky130_fd_pr__nfet_01v8_R7545W
+.end
+

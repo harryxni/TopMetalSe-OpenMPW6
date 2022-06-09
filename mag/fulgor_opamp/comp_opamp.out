@@ -1,0 +1,26 @@
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YT7TV5 in circuit opamp_v1.spice (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_8HUREQ in circuit opamp_v1.spice (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_BLS9H9 in circuit opamp_v1.spice (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YC9MKB in circuit opamp_v1.spice (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GQFJAV in circuit opamp_v1.spice (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YCMRKB in circuit opamp_v1.spice (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_8JUMX6 in circuit opamp_v1.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class opamp_v1.spice:  Merged 807 devices.
+
+Subcircuit summary:
+Circuit 1: opamp_v1.spice                  |Circuit 2: /home/fsolis/opamp_sky130/fulgo 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (5)                
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes opamp_v1.spice and /home/fsolis/opamp_sky130/fulgor-opamp-sky130/xschem/netlist/opamp.spice are equivalent.
+Circuits match uniquely.

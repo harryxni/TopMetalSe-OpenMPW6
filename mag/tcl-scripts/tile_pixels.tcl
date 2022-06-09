@@ -1,5 +1,5 @@
 grid 1um 1um
-set num_pix 5 
+set num_pix 3 
 proc place_pixel {x y num} {
 	box position $x $y
 	getcell pixel 
@@ -124,8 +124,12 @@ proc place_coltran {j pix_width pix_length num_pixels} {
 	box size 1.1 2	
 	box position [expr $j * $pix_width + 2.7 - 1.6] [expr -1* [expr $num_pixels - 1] *$pix_length - 5.5]
 	paint m4
-	label [format "COL_SEL%d" $j]
+	box size 1.1 0
+
+	label [format "COL_SEL\[%d]" $j]
 	port make
+	port class input
+
 }
 
 proc tile_array {num_pixels} {
@@ -227,7 +231,7 @@ proc tile_array {num_pixels} {
 				}
 
 
-							}
+			}
 			if {$i == [expr $num_pixels - 1]} {
 				box size 0.75 1 
 				box position [expr $j * $pix_width + 13.15] [expr -1* [expr $num_pixels - 1] *$pix_length - 1]
@@ -252,7 +256,8 @@ proc tile_array {num_pixels} {
 					box size 0 0 
 					label VDD
 					port make
-
+					port class inout
+					port use power
 				}
 			
 				#SF_IB	
@@ -267,7 +272,8 @@ proc tile_array {num_pixels} {
 					box size 0 0
 					box position -5.8 [expr -1 * $i * $pix_length + 13.75 + 15] 	
 					label SF_IB
-					port make	
+					port make
+					port class input	
 				}
 
 
@@ -291,6 +297,8 @@ proc tile_array {num_pixels} {
 				if {$i == [expr $num_pixels -1] } {
 					label CSA_VREF n m4
 					port make
+					port class input
+					
 				}
 
 				#NB1
@@ -315,6 +323,7 @@ proc tile_array {num_pixels} {
 					box position -3.7 [expr -1 * $i * $pix_length + 0.8 + 17]
 					label NB1 n m2
 					port make
+					port class input
 				}
 				#ROW_SEL
 				box size 5 0.45
@@ -345,9 +354,10 @@ proc tile_array {num_pixels} {
  
 				box size 0 0.45 
 
-				label [format "ROW_SEL%d" $i]
+				label [format "ROW_SEL\[%d]" $i]
 				port make
-			
+				port class input
+
 				#WIRE UP GRING
 				if {$i == 0 } {
 					box size 10 1.6
@@ -356,7 +366,7 @@ proc tile_array {num_pixels} {
 					box size 0 0
 					label GRING
 					port make
-
+					port class input
 				
 				}
 			}
@@ -374,6 +384,8 @@ proc tile_array {num_pixels} {
 					box size 0 0
 					label GND
 					port make
+					port class inout
+					port use GROUND
 				}
 		
 
@@ -394,6 +406,9 @@ proc connect_opamp {num_pixels} {
 	getcell bias
 }
 tile_array $num_pix 
-connect_opamp $num_pix
+
+#getcell 100pixel_array
+
+#connect_opamp 100 
 
 grid 0.05um 0.05um
