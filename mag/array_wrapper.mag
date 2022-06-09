@@ -1,9 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654740282
-<< checkpaint >>
-rect 2339 -299111 303705 2383
+timestamp 1654753044
 << metal1 >>
 rect 147045 6626 148460 7016
 rect 154020 5336 155975 5706
@@ -255,14 +253,14 @@ use bias  bias_0
 timestamp 1654639008
 transform 1 0 147210 0 1 7236
 box 790 -2236 7180 -220
+use opamp_wrapper  opamp_wrapper_0
+timestamp 1654750071
+transform 1 0 310080 0 1 -296491
+box -2280 -1640 26995 13665
 use pixel_array100x100  pixel_array100x100_0
-timestamp 1654740282
+timestamp 1654753044
 transform 1 0 3000 0 1 -1400
 box -3000 -298600 300740 5750
-use opamp_wrapper  opamp_wrapper_0
-timestamp 1654715968
-transform 1 0 310080 0 1 -296491
-box -2280 -1609 26995 13665
 << labels >>
 rlabel metal1 335570 -298061 335870 -297761 1 GND
 port 1 n

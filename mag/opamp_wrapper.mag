@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654625306
+timestamp 1654750071
 << nmoslvt >>
 rect -950 9870 650 10270
 rect 280 -850 1880 -450
@@ -202,8 +202,8 @@ rect 2490 7710 2515 8370
 rect -2205 7625 2515 7710
 rect 25795 7690 26620 12835
 rect 24850 6830 26620 7690
-use opamp_diego  opamp_diego_0 ~/CMOS/TopmetalSe/magic
-timestamp 1654624193
+use opamp_v1  opamp_v1_0 fulgor_opamp
+timestamp 1654711683
 transform 1 0 -1719 0 1 8388
 box 2069 -10028 26971 3199
 << labels >>
