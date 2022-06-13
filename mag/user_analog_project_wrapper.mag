@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1655144006
+timestamp 1655147776
 << metal1 >>
 rect 143673 694385 144063 694391
 rect 7012 688094 7332 688100
@@ -17758,11 +17758,11 @@ timestamp 1654639008
 transform 1 0 145381 0 1 675880
 box 790 -2236 7180 -220
 use opamp_wrapper  opamp_wrapper_0
-timestamp 1654988628
+timestamp 1655146955
 transform 1 0 369481 0 1 359134
 box -2280 -1640 26995 13665
 use opamp_wrapper  opamp_wrapper_1
-timestamp 1654988628
+timestamp 1655146955
 transform 1 0 179353 0 1 180877
 box -2280 -1640 26995 13665
 use pixel_array  pixel_array_0
@@ -19148,22 +19148,6 @@ flabel metal3 s 583520 313652 584800 313764 0 FreeSans 1400 0 0 0 gpio_analog[1]
 port 10 nsew
 flabel metal3 s 583520 358874 584800 358986 0 FreeSans 1400 0 0 0 gpio_analog[2]
 port 11 nsew
-rlabel metal1 393351 357774 393351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 390351 357774 390351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 387351 357774 387351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 384351 357774 384351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 381351 357774 381351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 378351 357774 378351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 375351 357774 375351 357774 1 opamp_wrapper_0/GND
-port 6 n
-rlabel metal1 372351 357774 372351 357774 1 opamp_wrapper_0/GND
-port 6 n
 rlabel space 168881 180777 169101 181177 1 COL_SEL0
 port 253 n
 rlabel space 171881 180777 172101 181177 1 COL_SEL0
