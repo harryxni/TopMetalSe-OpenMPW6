@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654753044
+timestamp 1654989252
 << nmoslvt >>
 rect 540 -6800 2140 -6400
 rect 3540 -6800 5140 -6400
@@ -707,39 +707,39 @@ rect 10906 -4186 10930 -3914
 rect 10610 -8280 10930 -4186
 rect -3720 -8600 10930 -8280
 use pixel  pixel_0
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -3800 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_1
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -800 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_2
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 2200 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_3
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -3800 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_4
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -800 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_5
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 2200 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_6
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -3800 0 1 -3300
 box 3640 -2860 6960 460
 use pixel  pixel_7
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 -800 0 1 -3300
 box 3640 -2860 6960 460
 use pixel  pixel_8
-timestamp 1654712443
+timestamp 1654903196
 transform 1 0 2200 0 1 -3300
 box 3640 -2860 6960 460
 << labels >>
@@ -823,8 +823,6 @@ rlabel metal5 1040 -4960 1240 -4760 1 PIX6_IN
 port 251 n
 rlabel metal4 2630 -6200 2780 -6000 1 PIX_OUT0
 port 252 n
-rlabel metal4 220 -7100 440 -6700 1 COL_SEL0
-port 253 n
 rlabel metal4 -480 -7600 -480 -7600 1 CSA_VREF
 port 207 n
 rlabel metal2 -3000 -4520 -3000 -4430 3 ROW_SEL2
@@ -833,16 +831,18 @@ rlabel metal5 4040 -4960 4240 -4760 1 PIX7_IN
 port 254 n
 rlabel metal4 5630 -6200 5780 -6000 1 PIX_OUT1
 port 255 n
-rlabel metal4 3220 -7100 3440 -6700 1 COL_SEL1
-port 256 n
 rlabel metal5 7040 -4960 7240 -4760 1 PIX8_IN
 port 257 n
 rlabel metal4 8630 -6200 8780 -6000 1 PIX_OUT2
 port 258 n
 rlabel metal2 8940 -7100 8940 -7100 1 ARRAY_OUT
 port 259 n
-rlabel metal4 6220 -7100 6440 -6700 1 COL_SEL2
-port 260 n
 rlabel metal1 -560 2880 40 2970 1 VDD
 port 205 n
+rlabel metal4 283 -6958 283 -6958 1 COL_SEL0
+port 260 n
+rlabel metal4 3346 -6841 3346 -6841 1 COL_SEl1
+port 261 n
+rlabel metal4 6337 -6795 6337 -6795 1 COL_SEL2
+port 262 n
 << end >>
