@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1655158581
+timestamp 1655248532
 << metal1 >>
 rect 143673 694385 144063 694391
 rect 7012 688094 7332 688100
@@ -17787,23 +17787,23 @@ rect 179459 115548 504010 115695
 rect 179459 115296 179483 115548
 rect 177673 115272 179483 115296
 use array_SR  array_SR_0
-timestamp 1655158581
+timestamp 1655248532
 transform 1 0 54469 0 1 344190
 box -21076 586 308046 327367
 use bias  bias_0
-timestamp 1654639008
+timestamp 1655248036
 transform 1 0 145381 0 1 675880
 box 790 -2236 7180 -220
 use opamp_wrapper  opamp_wrapper_0
-timestamp 1655146955
+timestamp 1655248036
 transform 1 0 369481 0 1 359134
 box -2280 -1640 26995 13665
 use opamp_wrapper  opamp_wrapper_1
-timestamp 1655146955
+timestamp 1655248036
 transform 1 0 179353 0 1 180877
 box -2280 -1640 26995 13665
 use pixel_array  pixel_array_0
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 165661 0 1 187877
 box -3720 -8600 11230 5820
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1655158581
+timestamp 1655248532
 << metal1 >>
 rect 302508 324533 302708 324539
 rect 302508 321358 302708 324333
@@ -12217,15 +12217,15 @@ rect 304186 15372 304210 15692
 rect 303842 15348 304210 15372
 rect 24 15299 392 15323
 use pixel_array100x100  pixel_array100x100_0
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 2108 0 1 317378
 box -3000 -298600 300740 5750
 use shift_registerC  shift_registerC_0
-timestamp 1654744971
+timestamp 1655248516
 transform 1 0 58 0 1 590
 box -1076 -4 307988 16000
 use shift_register  shift_register_0
-timestamp 1654744971
+timestamp 1655248532
 transform 0 1 -21072 -1 0 323984
 box -1076 -4 307988 16000
 << labels >>

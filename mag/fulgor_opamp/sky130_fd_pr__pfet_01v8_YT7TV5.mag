@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654711683
+timestamp 1655248036
 << error_p >>
 rect -1445 71 -1387 77
 rect -1327 71 -1269 77
@@ -1610,8 +1610,8 @@ rect 1452 -706 1458 -130
 rect 1492 -706 1498 -130
 rect 1452 -718 1498 -706
 << properties >>
-string gencell sky130_fd_pr__pfet_01v8
 string FIXED_BBOX -1589 -884 1589 884
-string parameters w 3 l 0.3 m 2 nf 25 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viagl 0 viagr 0 viagt 0 viagb 0 viagate 100 viadrn 100 viasrc 100
+string gencell sky130_fd_pr__pfet_01v8
 string library sky130
+string parameters w 3 l 0.3 m 2 nf 25 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viagl 0 viagr 0 viagt 0 viagb 0 viagate 100 viadrn 100 viasrc 100
 << end >>

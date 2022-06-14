@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1655158581
+timestamp 1655248036
 << nmoslvt >>
 rect 540 -6800 2140 -6400
 rect 3540 -6800 5140 -6400
@@ -707,39 +707,39 @@ rect 10906 -4186 10930 -3914
 rect 10610 -8280 10930 -4186
 rect -3720 -8600 10930 -8280
 use pixel  pixel_0
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -3800 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_1
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -800 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_2
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 2200 0 1 2700
 box 3640 -2860 6960 460
 use pixel  pixel_3
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -3800 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_4
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -800 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_5
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 2200 0 1 -300
 box 3640 -2860 6960 460
 use pixel  pixel_6
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -3800 0 1 -3300
 box 3640 -2860 6960 460
 use pixel  pixel_7
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 -800 0 1 -3300
 box 3640 -2860 6960 460
 use pixel  pixel_8
-timestamp 1655158581
+timestamp 1655248036
 transform 1 0 2200 0 1 -3300
 box 3640 -2860 6960 460
 << labels >>
