@@ -184,7 +184,6 @@ C {devices/gnd.sym} 470 -350 0 0 {name=l25 lab=GND}
 C {devices/gnd.sym} 610 -350 0 0 {name=l26 lab=GND}
 C {devices/vsource.sym} 710 -380 0 0 {name=V4 only_toplevel=true value="DC=0.35"}
 C {devices/lab_pin.sym} 710 -440 0 1 {name=l30 sig_type=std_logic lab=CSA}
-C {/home/damic/CMOS/TopmetalSe/Pixel/Schematic/csa.sym} 860 0 0 0 {name=x1}
 C {devices/lab_pin.sym} 840 -110 0 1 {name=l1 sig_type=std_logic lab=CSA}
 C {devices/lab_pin.sym} 800 90 3 0 {name=l3 sig_type=std_logic lab=NB2}
 C {devices/lab_pin.sym} 820 90 1 1 {name=l4 sig_type=std_logic lab=NB1}
@@ -716,3 +715,4 @@ C {devices/vdd.sym} 1180 -200 0 0 {name=l38 lab=VDD}
 C {devices/isource.sym} 1400 170 0 0 {name=I3 value=1u}
 C {devices/lab_pin.sym} 1200 -110 0 1 {name=l39 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 1080 130 0 0 {name=Vmeas1}
+C {csa.sym} 860 0 0 0 {name=x1}
