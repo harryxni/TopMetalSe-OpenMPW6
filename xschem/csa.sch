@@ -134,7 +134,7 @@ spiceprefix=X
 C {devices/vdd.sym} -90 -670 0 0 {name=l3 lab=VDD}
 C {devices/ngspice_probe.sym} -170 -390 0 0 {name=r3}
 C {sky130_fd_pr/pfet3_01v8_lvt.sym} 40 -590 0 0 {name=M10
-L=1
+L=2
 W=1
 body=VDD
 nf=1
@@ -149,7 +149,7 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8_lvt.sym} -210 -590 0 1 {name=M11
-L=1
+L=2
 W=1
 body=VDD
 nf=1

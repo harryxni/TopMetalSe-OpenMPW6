@@ -1,0 +1,27 @@
+* NGSPICE file created from /home/hni/TopMetalSe-OpenMPW6/mag/pixel.ext - technology: sky130A
+
+.subckt x/home/hni/TopMetalSe-OpenMPW6/mag/pixel gring test_net VREF ROW_SEL NB1 VBIAS
++ NB2 AMP_IN SF_IB PIX_OUT CSA_VREF VDD GND
+X0 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=2.52844e+13p pd=5.625e+07u as=0p ps=0u w=2e+06u l=2e+06u
+X1 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=1.57e+12p pd=1.23e+07u as=0p ps=0u w=650000u l=650000u
+X2 a_4120_n520# VBIAS a_4120_n750# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.99e+12p ps=1.76e+07u w=1e+06u l=800000u
+X3 test_net a_4600_n810# GND VDD sky130_fd_pr__pfet_01v8_lvt ad=5e+11p pd=3e+06u as=8.3e+11p ps=5.9e+06u w=1e+06u l=1e+06u
+X4 VDD SF_IB test_net VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X5 a_5460_10# a_4350_10# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X6 a_3860_n520# VBIAS a_3860_n1150# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.52e+12p ps=1.76e+07u w=1e+06u l=800000u
+X7 VDD a_4120_n520# a_4600_n810# GND sky130_fd_pr__nfet_01v8_lvt ad=1.15e+12p pd=8.3e+06u as=5e+11p ps=3e+06u w=1e+06u l=1e+06u
+X8 a_4350_10# a_3860_n520# a_3860_n520# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X9 a_4120_n750# AMP_IN a_4050_n2590# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=3.22e+12p ps=1.79e+07u w=7e+06u l=150000u
+X10 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=3.35e+06u
+X11 a_4120_n520# a_3860_n520# a_5460_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X12 GND NB1 a_4050_n2590# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1.2e+06u l=1e+06u
+X13 a_5750_n920# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=1.2e+12p pd=5.9e+06u as=5.4e+12p ps=9.4e+06u w=2e+06u l=1e+06u
+X14 a_4050_n2590# VREF a_3860_n1150# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X15 a_4600_n810# NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1.15e+06u
+X16 AMP_IN a_4600_n810# sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X17 VDD a_4350_10# a_4350_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X18 VDD test_net a_5750_n920# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X19 AMP_IN CSA_VREF a_4600_n810# VDD sky130_fd_pr__pfet_01v8_lvt ad=2.94e+11p pd=2.24e+06u as=2.73e+11p ps=2.14e+06u w=420000u l=8e+06u
+X20 GND GND GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.6e+06u l=350000u
+.ends
+
