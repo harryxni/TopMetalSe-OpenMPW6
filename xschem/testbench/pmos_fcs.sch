@@ -1,21 +1,22 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
 E {}
 N -90 40 -20 40 {
-lab=test}
+lab=#net1}
 N -370 40 -290 40 {
 lab=VDD}
 N -130 -70 -130 10 {
-lab=#net1}
-N -250 -70 -130 -70 {
-lab=#net1}
-N -370 -70 -370 10 {
-lab=#net1}
-N 390 -200 390 -120 {
 lab=#net2}
+N -250 -70 -130 -70 {
+lab=#net2}
+N -370 -70 -370 10 {
+lab=#net2}
+N 390 -200 390 -120 {
+lab=#net3}
 N 170 -340 170 -260 {
 lab=VDD}
 N 390 -340 390 -260 {
@@ -29,15 +30,15 @@ lab=test_node2}
 N 170 -170 240 -170 {
 lab=test_node2}
 N 240 -90 350 -90 {
-lab=#net3}
+lab=#net4}
 N 240 -90 240 -30 {
-lab=#net3}
+lab=#net4}
 N 210 -230 240 -230 {
 lab=test_node2}
 N 170 -200 170 -170 {
 lab=test_node2}
 N 210 -90 240 -90 {
-lab=#net3}
+lab=#net4}
 N 170 80 170 100 {
 lab=test_node}
 N 280 50 280 90 {
@@ -93,7 +94,7 @@ lab=VBN1}
 N 170 100 170 170 {
 lab=test_node}
 N 390 140 390 170 {
-lab=#net4}
+lab=#net5}
 N 170 -340 390 -340 {
 lab=VDD}
 N 280 50 350 50 {
@@ -111,13 +112,13 @@ lab=VDD}
 N -1200 280 -1180 280 {
 lab=GND}
 N 390 80 390 140 {
-lab=#net4}
+lab=#net5}
 N 150 200 170 200 {
-lab=#net5}
+lab=#net6}
 N 150 200 150 230 {
-lab=#net5}
+lab=#net6}
 N 150 230 170 230 {
-lab=#net5}
+lab=#net6}
 N 390 200 410 200 {
 lab=GND}
 N 410 200 410 230 {
@@ -126,8 +127,8 @@ N 390 230 410 230 {
 lab=GND}
 N -610 40 -410 40 {
 lab=test2}
-N -610 270 -610 290 {
-lab=AMP_IN}
+N -580 100 -580 120 {
+lab=test2}
 N -610 400 -610 420 {
 lab=VREF}
 N -610 660 -610 680 {
@@ -147,7 +148,7 @@ lab=VBIAS}
 N -430 870 -370 870 {
 lab=VBIAS}
 N -370 -70 -250 -70 {
-lab=#net1}
+lab=#net2}
 N -190 830 -120 830 {
 lab=VBN1}
 N -230 780 -230 800 {
@@ -173,15 +174,15 @@ lab=GND}
 N -250 -340 -250 -250 {
 lab=VDD}
 N 170 230 170 310 {
-lab=#net5}
+lab=#net6}
 N -250 -250 -250 -190 {
 lab=VDD}
 N -370 70 -370 100 {
-lab=#net4}
+lab=#net5}
 N -130 70 -130 80 {
 lab=test_node}
 N -370 100 -370 140 {
-lab=#net4}
+lab=#net5}
 N -130 80 -130 100 {
 lab=test_node}
 N -230 780 -180 780 {
@@ -195,40 +196,22 @@ lab=VDD}
 N -130 120 170 120 {
 lab=test_node}
 N -370 140 390 140 {
-lab=#net4}
+lab=#net5}
 N 170 -40 240 -40 {
-lab=#net3}
+lab=#net4}
 N 170 -60 170 -40 {
-lab=#net3}
+lab=#net4}
 N -580 40 -580 50 {
 lab=test2}
 N -580 50 -580 110 {
 lab=test2}
-N -430 40 -430 470 {
-lab=test2}
 N 480 -20 480 460 {
 lab=AMP_OUT}
-N 480 460 480 470 {
-lab=AMP_OUT}
-N 90 470 480 470 {
-lab=AMP_OUT}
-N -430 470 30 470 {
-lab=test2}
-N -430 470 -430 540 {
-lab=test2}
-N 90 540 480 540 {
-lab=AMP_OUT}
-N 480 460 480 540 {
-lab=AMP_OUT}
-N -430 540 30 540 {
-lab=test2}
-N -260 320 -260 340 {
-lab=VBN1}
 N 280 200 280 230 {
 lab=VBN1}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -390 40 0 0 {name=M1
 L=0.35
-W=6
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -242,7 +225,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -110 40 0 1 {name=M2
 L=0.35
-W=6
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -410,9 +393,9 @@ save all
 *tran 1m 50m
 *plot v(test)
 *op
-*dc v4 1 1.4 0.0001
-ac dec 10 1 1000Meg
-plot vdb(AMP_OUT) 180*cph(v(AMP_OUT))/pi xlog
+dc v2 0.5 1.4 0.0001
+*ac dec 10 1 1000Meg
+*plot vdb(AMP_OUT) 180*cph(v(AMP_OUT))/pi xlog
 
 *plot v(AMP_OUT)
 *plot deriv(v(AMP_OUT))
@@ -435,12 +418,11 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} -610 320 0 0 {name=V2 value=0.8}
-C {devices/lab_pin.sym} -610 350 0 0 {name=l4 sig_type=std_logic lab=GND}
+C {devices/vsource.sym} -580 150 0 0 {name=V2 value=0.5}
+C {devices/lab_pin.sym} -580 180 0 0 {name=l4 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -610 400 0 0 {name=l5 sig_type=std_logic lab=VREF}
 C {devices/vsource.sym} -610 450 0 0 {name=V3 value=0.8}
 C {devices/lab_pin.sym} -610 480 0 0 {name=l6 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} -610 270 2 0 {name=l9 sig_type=std_logic lab=AMP_IN}
 C {devices/vsource.sym} -610 710 0 0 {name=V5 value=0.86}
 C {devices/lab_pin.sym} -610 740 0 0 {name=l12 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} -410 830 2 0 {name=M10
@@ -462,7 +444,7 @@ C {devices/lab_pin.sym} -810 690 0 0 {name=l14 sig_type=std_logic lab=VDD}
 C {devices/vsource.sym} -810 720 0 0 {name=V1 value=1.8}
 C {devices/lab_pin.sym} -810 750 0 0 {name=l19 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -430 770 0 0 {name=l15 sig_type=std_logic lab=VDD}
-C {devices/isource.sym} -430 900 0 0 {name=I0 value=400n}
+C {devices/isource.sym} -430 900 0 0 {name=I0 value=600n}
 C {devices/lab_pin.sym} -430 950 0 0 {name=l20 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -210 830 0 1 {name=M13
 L=1
@@ -484,28 +466,14 @@ C {devices/lab_pin.sym} -230 710 0 0 {name=l24 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -230 890 0 0 {name=l28 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 170 340 0 0 {name=Vmeas1}
 C {devices/ammeter.sym} -250 -100 0 0 {name=Vmeas2}
-C {devices/lab_pin.sym} -20 40 1 0 {name=l11 sig_type=std_logic lab=test}
-C {devices/lab_pin.sym} -610 40 0 0 {name=l13 sig_type=std_logic lab=test2}
 C {devices/lab_pin.sym} 280 90 0 0 {name=l29 sig_type=std_logic lab=VBN2}
 C {devices/lab_pin.sym} 170 130 2 0 {name=l30 sig_type=std_logic lab=test_node}
 C {devices/lab_pin.sym} -610 660 2 0 {name=l10 sig_type=std_logic lab=VBN2}
-C {devices/vsource.sym} -580 140 0 0 {name=V4 value="DC 1.2 AC 1"}
-C {devices/lab_pin.sym} -580 170 0 0 {name=l31 sig_type=std_logic lab=GND}
-C {devices/vsource.sym} -50 70 0 0 {name=V6 value=1.2}
+C {devices/lab_pin.sym} -700 240 0 0 {name=l31 sig_type=std_logic lab=GND}
+C {devices/vsource.sym} -50 70 0 0 {name=V6 value=0.8}
 C {devices/lab_pin.sym} -50 100 2 0 {name=l32 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 240 -170 2 0 {name=l33 sig_type=std_logic lab=test_node2}
 C {devices/ammeter.sym} 170 -10 0 0 {name=Vmeas3}
-C {devices/capa.sym} 60 470 1 1 {name=C1
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/res.sym} 60 540 1 0 {name=R1
-value=1G
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -260 370 0 0 {name=V7 value=0.5}
-C {devices/lab_pin.sym} -260 400 0 0 {name=l34 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} -260 320 2 0 {name=l35 sig_type=std_logic lab=VBN1}
 C {devices/lab_pin.sym} 280 230 0 0 {name=l36 sig_type=std_logic lab=VBN1}
+C {devices/isource.sym} -700 210 0 1 {name=I2 value="DC=0 PULSE(0 100p 30m 0.01m 0.01m 10u 1s)"}
+C {devices/lab_pin.sym} -580 110 0 0 {name=l40 sig_type=std_logic lab=test2}
