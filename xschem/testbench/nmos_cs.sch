@@ -323,10 +323,10 @@ spiceprefix=X
 C {devices/ngspice_probe.sym} -580 510 0 0 {name=r2}
 C {devices/lab_pin.sym} -540 570 0 1 {name=l17 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} -580 660 0 1 {name=l18 sig_type=std_logic lab=GND}
-C {devices/isource.sym} -580 450 0 0 {name=I0 value=400n}
+C {devices/isource.sym} -580 450 0 0 {name=I0 value=100n}
 C {devices/vdd.sym} -580 420 0 0 {name=l19 lab=VDD}
 C {devices/vdd.sym} -290 450 0 0 {name=l21 lab=VDD}
-C {devices/isource.sym} -290 480 0 0 {name=I4 value=30n}
+C {devices/isource.sym} -290 480 0 0 {name=I4 value=100n}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -310 570 0 0 {name=M9
 L=1.2
 W=1
@@ -353,10 +353,16 @@ value="
 .control
 save all
 
-*tran 1m 50m
-DC V5 0.4 0.8 0.0001
-plot v(amp_out)
-plot deriv(v(amp_out))
+*DC V5 0.4 1 0.0001
+*plot v(amp_out)
+*plot deriv(v(amp_out))
+
+*op
+
+ac dec 10 1 100G
+plot vdb(AMP_OUT)
+
+
 *noise v(PIX_OUT) V8 dec 10 1 1Meg
 *setplot noise2
 *print onoise_total
@@ -375,12 +381,12 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} 240 -10 0 0 {name=V5 only_toplevel=true value="DC=0.6"}
+C {devices/vsource.sym} 240 -10 0 0 {name=V5 only_toplevel=true value="DC=0.6 AC=1"}
 C {devices/lab_pin.sym} 240 -70 0 1 {name=l8 sig_type=std_logic lab=AMP_IN}
 C {devices/gnd.sym} 240 20 0 0 {name=l24 lab=GND}
-C {devices/ammeter.sym} 360 860 0 0 {name=Vmeas}
-C {devices/ammeter.sym} 20 920 0 0 {name=Vmeas1}
 C {devices/ipin.sym} -660 380 0 0 {name=p6 lab=NB1}
 C {devices/ipin.sym} -420 570 0 0 {name=p10 lab=NB2}
 C {devices/lab_pin.sym} -60 980 0 0 {name=p3 sig_type=std_logic lab=NB1}
 C {devices/lab_pin.sym} 270 920 0 0 {name=p7 sig_type=std_logic lab=NB2}
+C {devices/ammeter.sym} 20 920 0 0 {name="V_i_amp"}
+C {devices/ammeter.sym} 360 860 0 0 {name=V_i_sf}

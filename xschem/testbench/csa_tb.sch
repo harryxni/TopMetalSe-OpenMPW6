@@ -133,7 +133,7 @@ value="
 .control
 save all
 set filetype=ascii
-tran 1m 100m
+tran 1m 600m
 *plot v(test)
 plot v(pix_out)
 
@@ -184,7 +184,7 @@ C {devices/lab_pin.sym} 150 -180 0 1 {name=l17 sig_type=std_logic lab=NB1}
 C {devices/gnd.sym} 400 -350 0 0 {name=l23 lab=GND}
 C {devices/gnd.sym} 470 -350 0 0 {name=l25 lab=GND}
 C {devices/gnd.sym} 610 -350 0 0 {name=l26 lab=GND}
-C {devices/vsource.sym} 710 -380 0 0 {name=V4 only_toplevel=true value="DC=0.55"}
+C {devices/vsource.sym} 710 -380 0 0 {name=V4 only_toplevel=true value="DC=0.35"}
 C {devices/lab_pin.sym} 710 -440 0 1 {name=l30 sig_type=std_logic lab=CSA}
 C {devices/lab_pin.sym} 840 -110 0 1 {name=l1 sig_type=std_logic lab=CSA}
 C {devices/lab_pin.sym} 800 90 3 0 {name=l3 sig_type=std_logic lab=NB2}
