@@ -9,7 +9,7 @@
 
 Tutorial
 =================
-The [tutorial is here] (https://www.overleaf.com/read/tnfywwfnhdpv) . 
+The [tutorial is here](https://www.overleaf.com/read/tnfywwfnhdpv) . 
 
 Overview
 =================
