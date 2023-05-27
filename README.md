@@ -7,6 +7,10 @@
 
 ## A Low Noise Charge Sensing Pixelated CMOS Detector for the Selena Neutrino Experiment
 
+Tutorial
+=================
+The [tutorial is here] (https://www.overleaf.com/read/tnfywwfnhdpv) . 
+
 Overview
 =================
 
