@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -123,39 +123,6 @@ N 1180 -110 1200 -110 {
 lab=GND}
 N 720 240 720 280 {
 lab=gring}
-C {devices/code.sym} 230 400 0 0 {name=STIMULI1 
-only_toplevel=true
-place=end
-value="
-.options gmin=0.0000000000000000000001
-*.options savecurrents
-
-.control
-save all
-set filetype=ascii
-tran 1m 600m
-*plot v(test)
-plot v(pix_out)
-
-*noise v(PIX_OUT) V8 dec 10 1 1Meg
-*setplot noise2
-*print onoise_total
-
-*noise v(PIX_OUT) V8 dec 10 1 1Meg
-*setplot noise2
-*print onoise_total
-wrdata csa_output_55.txt v(pix_out) v(gring)
-.endc
-"}
-C {devices/code.sym} 230 220 0 0 {name=TT_MODELS1
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/vsource.sym} 400 -380 0 0 {name=V1 value=1.8 net_name=true}
 C {devices/vsource.sym} 470 -380 0 0 {name=V2 only_toplevel=true value="DC=0.60"}
 C {devices/lab_pin.sym} 470 -440 0 1 {name=l10 sig_type=std_logic lab=PLUS}
@@ -316,3 +283,36 @@ C {devices/ammeter.sym} 1080 130 0 0 {name=Vmeas1}
 C {csa.sym} 860 0 0 0 {name=x1}
 C {devices/lab_pin.sym} 670 120 0 0 {name=p2 sig_type=std_logic lab=node1}
 C {devices/lab_pin.sym} 720 260 2 0 {name=p1 sig_type=std_logic lab=gring}
+C {devices/code.sym} 230 400 0 0 {name=STIMULI2 
+only_toplevel=true
+place=end
+value="
+.options gmin=0.0000000000000000000001
+*.options savecurrents
+
+.control
+save all
+set filetype=ascii
+tran 1m 600m
+*plot v(test)
+plot v(pix_out)
+
+*noise v(PIX_OUT) V8 dec 10 1 1Meg
+*setplot noise2
+*print onoise_total
+
+*noise v(PIX_OUT) V8 dec 10 1 1Meg
+*setplot noise2
+*print onoise_total
+wrdata csa_output_55.txt v(pix_out) v(gring)
+.endc
+"}
+C {devices/code.sym} 230 220 0 0 {name=TT_MODELS2
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}
