@@ -115,17 +115,20 @@ C {devices/lab_pin.sym} 760 -500 0 0 {name=p2 sig_type=std_logic lab=NB2_DAC}
 C {devices/lab_pin.sym} 830 -530 0 0 {name=p6 sig_type=std_logic lab=AMP_DAC}
 C {devices/isource.sym} -120 -540 0 0 {name=I0 value=1u}
 C {devices/lab_pin.sym} -120 -490 0 0 {name=p7 sig_type=std_logic lab=OUT_DAC}
-C {devices/vdd.sym} -120 -570 0 0 {name=l2 lab=VDD}
 C {devices/isource.sym} 0 -540 0 0 {name=I1 value=400n}
 C {devices/lab_pin.sym} 0 -490 0 0 {name=p8 sig_type=std_logic lab=NB1_DAC}
-C {devices/vdd.sym} 0 -570 0 0 {name=l3 lab=VDD}
 C {devices/isource.sym} 110 -540 0 0 {name=I2 value=30n}
 C {devices/lab_pin.sym} 110 -490 0 0 {name=p9 sig_type=std_logic lab=NB2_DAC}
-C {devices/vdd.sym} 110 -570 0 0 {name=l4 lab=VDD}
 C {devices/isource.sym} 350 -540 0 0 {name=I5 value=100u}
 C {devices/lab_pin.sym} 350 -490 0 0 {name=p12 sig_type=std_logic lab=AMP_DAC}
-C {devices/vdd.sym} 350 -570 0 0 {name=l7 lab=VDD}
 C {devices/lab_pin.sym} 690 -470 0 0 {name=p5 sig_type=std_logic lab=SF_DAC}
 C {devices/lab_pin.sym} 230 -490 0 0 {name=p11 sig_type=std_logic lab=SF_DAC}
 C {devices/gnd.sym} 230 -570 2 0 {name=l5 lab=GND}
 C {devices/isource.sym} 230 -540 2 1 {name=I3 value=100n}
+C {devices/vsource.sym} -130 -270 0 0 {name=V2 value=2.5 net_name=true}
+C {devices/gnd.sym} -130 -240 0 0 {name=l6 lab=GND}
+C {devices/vdd.sym} -130 -300 0 0 {name=l8 lab=VREF}
+C {devices/vdd.sym} -120 -570 0 0 {name=l2 lab=VREF}
+C {devices/vdd.sym} 0 -570 0 0 {name=l3 lab=VREF}
+C {devices/vdd.sym} 110 -570 0 0 {name=l4 lab=VREF}
+C {devices/vdd.sym} 350 -570 0 0 {name=l7 lab=VREF}
