@@ -46,9 +46,11 @@ The control of the two shift registers is handled by an FPGA external to the dev
 
 
 # Testing Results
-
+For the most, the "bring-up" of our chips was quite simple since our project did not interact at all with the Caravel core. 
+We had our own PCB, which provided the bias voltages, the output amplifiers and the interface to our FPGA, which managed the clocking.
+We tested with two different packages: the provided QFN and the bare die (which we wirebonded).
 **Single Pixel Amplifiers**
-
+The first step in testing our deviceswas to demonstrate that the in-pixel charge sensitive amplifiers were working. 
 
 **Optical Imaging with the Array**
 
