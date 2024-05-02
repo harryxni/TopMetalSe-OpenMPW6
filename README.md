@@ -13,6 +13,8 @@ The [tutorial is here](https://www.overleaf.com/read/tnfywwfnhdpv) .
 
 Overview
 =================
+[Skip To Results](#testing-results)
+
 
 The TopMetalSe-MPW6 is a prototype charge sensing detector for the Selena Neutrino Experiment submitted to the OpenMPW-6 Shuttle Run. It is based on the [TopMetal-II <sup>- </sup> Active Pixel Sensor](https://arxiv.org/abs/1509.08611), which we had previously characterized. A TopMetal pixel contains an electrode made from the topmost metal layer, surrounded by a guard ring (gring). Each pixel is directly coupled to a charge sensitive amplifier (CSA), which converts input charge to an analog signal. The TopMetalSe-MPW6 contains 2 100x100 pixel array test structures in each user area. The pixels have a square geometry, with a 10.2 µm electrode with and a 15 µm pixel pitch. The simulated noise is ~15 electrons with a charge conserion gain of ~25 µV per electron.
 
@@ -41,3 +43,15 @@ We simulate a simple 3x3 pixel array, with the output of the chip shown below at
 **Array Control**
 The large 100x100 pixel array is controlled by two shift registers, the behavioral code for which is [found here](https://github.com/plac-lab/TopmetalSe).
 The control of the two shift registers is handled by an FPGA external to the device; the vivado for project can be [found here](https://github.com/harryxni/TopmetalSe_Sequencer).
+
+
+# Testing Results
+
+**Single Pixel Amplifiers**
+
+
+**Optical Imaging with the Array**
+
+
+**A "Time Projection Chamber in ambient air"**
+
