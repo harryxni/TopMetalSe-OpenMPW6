@@ -48,9 +48,17 @@ The control of the two shift registers is handled by an FPGA external to the dev
 For the most, the "bring-up" of our chips was quite simple since our project did not interact at all with the Caravel core. 
 We had our own PCB, which provided the bias voltages, the output amplifiers and the interface to our FPGA, which managed the clocking.
 We tested with two different packages: the provided QFN and the bare die (which we wirebonded).
+
 **Single Pixel Amplifiers**
 The first step in testing our devices was to demonstrate that the in-pixel charge sensitive amplifiers were working. We injected charge into our amplifiers through the parasitic capacitance between the guard-ring and the input to our amplifiers. We began by doing this on one of the pixels within our small 3x3 array, which allowed us to not worry about pixel selection in the large array. 
-I am showing a test pulse 
+I am showing an example output response from the amplifier.
+![test pulse](Photos/TMSe_pulse.png)
+After digitizing and saving the output pulse, we apply a trapezoidal filter and record the height of the output pulse. The distribution of pulse heights over multiple pulse injections gives us an idea of the noise and gain of our amplifiers.
+
+Now, doing this over the entire ray gives an idea of the distribution of the noise over the area, shown in units of Equivalent Noise Charge.
+![ENC map](Photos/ENC_pix_map.png)
+![ENC distribution](Photos/pixel_ENC_dist.png)
+
 
 **Optical Imaging with the Array**
 
