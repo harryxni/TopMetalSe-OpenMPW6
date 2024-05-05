@@ -56,6 +56,8 @@ I am showing an example output response from the amplifier.
 After digitizing and saving the output pulse, we apply a trapezoidal filter and record the height of the output pulse. The distribution of pulse heights over multiple pulse injections gives us an idea of the noise and gain of our amplifiers.
 
 Now, doing this over the entire ray gives an idea of the distribution of the noise over the area, shown in units of Equivalent Noise Charge.
+
+
 ![ENC map](Photos/ENC_pix_map.png)
 ![ENC distribution](Photos/pixel_ENC_dist.png)
 
